@@ -6,6 +6,8 @@ salary/income
 - [ ] Add Spring support
 
 ### In Progress
+- [ ] Add table of contents to README.md
+  - [ ] Add technologies used for project
 
 ### Done
 - [x] Added tax brackets for states
