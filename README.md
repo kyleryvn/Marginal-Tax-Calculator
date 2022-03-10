@@ -1,6 +1,6 @@
 # Marginal Tax Calculator
 
-Use this calculator to get an approximate estimate of federal and state taxes owed.
+Use this calculator to get an estimate of federal and state taxes owed.
 Federal taxes are calculated based on income and filing status, following formula given below
 
 ## 2021 Federal Tax Brackets
@@ -169,8 +169,9 @@ The individual’s effective tax rate is approximately 13.5% of income:
 Source: [Investopedia](https://www.investopedia.com/terms/t/taxbracket.asp)
 
 ## 2021 State Tax Brackets
-Each state carries its own tax laws. Provided are links to the difference tax brackets of all states that levy income
-tax. Currently, Alaska, Florida, Nevada, New Hampshire**, South Dakota, Tennessee, Texas, Washington***, and Wyoming do not
+Each state carries its own tax laws. However, state taxes are calculated following the same formula as federal taxes. 
+Provided below are links to the difference tax brackets of all the states that collect income
+taxes. Currently, Alaska, Florida, Nevada, New Hampshire**, South Dakota, Tennessee, Texas, Washington***, and Wyoming do not
 collect income tax
 
 ** New Hampshire taxes 5% on interest and dividends only<br>
