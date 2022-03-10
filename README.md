@@ -229,7 +229,7 @@ Source: [IncomeTaxPro](https://www.incometaxpro.net)
 [![Java](https://img.shields.io/badge/-Java-007396?&logo=Java&logoColor=white&labelColor=grey&style=for-the-badge)](https://jdk.java.net/17/)
 
 #### Project Management
-[![Apache Maven](https://img.shields.io/badge/-Apache%20Maven-C71A36?&logo=Apache%20Maven&logoColor=white&labelColor=grey&style=for-the-badge)](https://jdk.java.net/17/)
+[![Apache Maven](https://img.shields.io/badge/-Apache%20Maven-C71A36?&logo=Apache%20Maven&logoColor=white&labelColor=grey&style=for-the-badge)](https://maven.apache.org/)
 
 #### Dependencies
 [![JUnit](https://img.shields.io/badge/-JUnit5-25A162?&logo=JUnit5&logoColor=white&labelColor=grey&style=for-the-badge)](https://junit.org/junit5/)
