@@ -2,7 +2,7 @@
 Program that calculates an estimate of federal and state taxes due based on an individuals filing status and
 salary/income
 
-### Todo
+### To do
 - [ ] Add Spring support
 
 ### In Progress
