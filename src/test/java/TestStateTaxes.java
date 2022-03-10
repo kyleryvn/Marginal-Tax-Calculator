@@ -1,5 +1,3 @@
-package com.github.kyleryvn.statetests;
-
 import com.github.kyleryvn.taxservice.dao.StateDAO;
 import com.github.kyleryvn.taxservice.services.StateTaxService;
 import org.junit.jupiter.api.DisplayName;
@@ -10,7 +8,7 @@ import java.util.Locale;
 import java.util.Map;
 
 @DisplayName("Test: State Data")
-public class TestStateDataDAO {
+public class TestStateTaxes {
 
     @Test
     @DisplayName("Test getting data from HashMap")
