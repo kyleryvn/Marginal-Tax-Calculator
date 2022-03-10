@@ -225,7 +225,9 @@ collect income tax
 Source: [IncomeTaxPro](https://www.incometaxpro.net)
 
 ## Technologies Used
+#### Main Language
 [![Java](https://img.shields.io/badge/-Java-007396?&logo=Java&logoColor=white&style=flat)](https://jdk.java.net/17/)
-[![JUnit](https://img.shields.io/badge/-JUnit5-25A162?&logo=JUnit5&logoColor=white&style=flat)](https://junit.org/junit5/)
 
-[Google Gson](https://github.com/google/gson) 2.9.0
+#### Maven Dependencies
+[![JUnit](https://img.shields.io/badge/-JUnit5-25A162?&logo=JUnit5&logoColor=white&style=flat)](https://junit.org/junit5/)
+[![Gson](https://img.shields.io/badge/-Google%20Gson-4285F4?&logo=Google&logoColor=white&style=flat)](https://github.com/google/gson)
