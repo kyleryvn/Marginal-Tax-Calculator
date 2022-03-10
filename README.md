@@ -1,5 +1,7 @@
 # Marginal Tax Calculator
 
+![](https://img.shields.io/badge/-Java-007396?&logo=Java&logoColor=white&style=flat)
+
 Use this calculator to get an estimate of federal and state taxes owed.
 Federal taxes are calculated based on income and filing status, following formula given below
 
