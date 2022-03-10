@@ -1,0 +1,16 @@
+{"taxRate": 0.02, "filingStatus": "S", "salaryRangeOne": 0.0, "salaryRangeTwo": 3000.0}
+{"taxRate": 0.03, "filingStatus": "S", "salaryRangeOne": 3000.0, "salaryRangeTwo": 5000.0}
+{"taxRate": 0.05, "filingStatus": "S", "salaryRangeOne": 5000.0, "salaryRangeTwo": 17000.0}
+{"taxRate": 0.0575, "filingStatus": "S", "salaryRangeOne": 17000.0, "salaryRangeTwo": 3.4028235E38}
+{"taxRate": 0.02, "filingStatus": "MFJ", "salaryRangeOne": 0.0, "salaryRangeTwo": 3000.0}
+{"taxRate": 0.03, "filingStatus": "MFJ", "salaryRangeOne": 3000.0, "salaryRangeTwo": 5000.0}
+{"taxRate": 0.05, "filingStatus": "MFJ", "salaryRangeOne": 5000.0, "salaryRangeTwo": 17000.0}
+{"taxRate": 0.0575, "filingStatus": "MFJ", "salaryRangeOne": 17000.0, "salaryRangeTwo": 3.4028235E38}
+{"taxRate": 0.02, "filingStatus": "MFS", "salaryRangeOne": 0.0, "salaryRangeTwo": 3000.0}
+{"taxRate": 0.03, "filingStatus": "MFS", "salaryRangeOne": 3000.0, "salaryRangeTwo": 5000.0}
+{"taxRate": 0.05, "filingStatus": "MFS", "salaryRangeOne": 5000.0, "salaryRangeTwo": 17000.0}
+{"taxRate": 0.0575, "filingStatus": "MFS", "salaryRangeOne": 17000.0, "salaryRangeTwo": 3.4028235E38}
+{"taxRate": 0.02, "filingStatus": "HH", "salaryRangeOne": 0.0, "salaryRangeTwo": 3000.0}
+{"taxRate": 0.03, "filingStatus": "HH", "salaryRangeOne": 3000.0, "salaryRangeTwo": 5000.0}
+{"taxRate": 0.05, "filingStatus": "HH", "salaryRangeOne": 5000.0, "salaryRangeTwo": 17000.0}
+{"taxRate": 0.0575, "filingStatus": "HH", "salaryRangeOne": 17000.0, "salaryRangeTwo": 3.4028235E38}

@@ -1,0 +1,4 @@
+{"taxRate": 0.0425, "filingStatus": "S", "salaryRangeOne": 0.0, "salaryRangeTwo": 3.4028235E38}
+{"taxRate": 0.0425, "filingStatus": "MFJ", "salaryRangeOne": 0.0, "salaryRangeTwo": 3.4028235E38}
+{"taxRate": 0.0425, "filingStatus": "MFS", "salaryRangeOne": 0.0, "salaryRangeTwo": 3.4028235E38}
+{"taxRate": 0.0425, "filingStatus": "HH", "salaryRangeOne": 0.0, "salaryRangeTwo": 3.4028235E38}
