@@ -1,7 +1,4 @@
 # Marginal Tax Calculator
-
-[![Java](https://img.shields.io/badge/-Java-007396?&logo=Java&logoColor=white&style=flat)](https://jdk.java.net/17/)
-
 Use this calculator to get an estimate of federal and state taxes owed.
 Federal taxes are calculated based on income and filing status, following formula given below
 
@@ -228,6 +225,7 @@ collect income tax
 Source: [IncomeTaxPro](https://www.incometaxpro.net)
 
 ## Technologies Used
-* [Java](https://jdk.java.net/17/) (JDK 17)
-* [Google Gson](https://github.com/google/gson) 2.9.0
-* [JUnit](https://junit.org/junit5/) 5.8.2
+[![Java](https://img.shields.io/badge/-Java-007396?&logo=Java&logoColor=white&style=flat)](https://jdk.java.net/17/)
+[![JUnit](https://img.shields.io/badge/-JUnit5-25A162?&logo=JUnit5&logoColor=white&style=flat)](https://junit.org/junit5/)
+
+[Google Gson](https://github.com/google/gson) 2.9.0
