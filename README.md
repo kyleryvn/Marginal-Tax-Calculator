@@ -3,8 +3,12 @@
 Use this calculator to get an estimate of federal and state taxes owed.
 Federal taxes are calculated based on income and filing status, following formula given below
 
-## 2021 Federal Tax Brackets
+## Table of Contents
+* [Federal Tax Brackets](#2021-federal-tax-brackets) 
+* [State Tax Brackets](#2021-state-tax-brackets) 
+* [Technologies](#technologies-used)
 
+## 2021 Federal Tax Brackets
 For taxes due April 2022 or October 2022 with an extension
 <table>
     <thead align="center">
@@ -220,3 +224,9 @@ collect income tax
 * [Wisconsin](https://www.incometaxpro.net/tax-rates/wisconsin.htm)
 
 Source: [IncomeTaxPro](https://www.incometaxpro.net)
+
+## Technologies Used
+* [Java](https://jdk.java.net/17/) (JDK 17)
+* Maven Dependencies:
+  * [Google Gson](https://github.com/google/gson) 2.9.0
+  * [JUnit](https://junit.org/junit5/) 5.8.2
