@@ -227,6 +227,5 @@ Source: [IncomeTaxPro](https://www.incometaxpro.net)
 
 ## Technologies Used
 * [Java](https://jdk.java.net/17/) (JDK 17)
-* Maven Dependencies:
-  * [Google Gson](https://github.com/google/gson) 2.9.0
-  * [JUnit](https://junit.org/junit5/) 5.8.2
+* [Google Gson](https://github.com/google/gson) 2.9.0
+* [JUnit](https://junit.org/junit5/) 5.8.2
