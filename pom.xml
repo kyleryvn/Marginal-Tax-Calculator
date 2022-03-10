@@ -14,7 +14,6 @@
     </properties>
 
     <dependencies>
-
         <dependency>
             <groupId>com.google.code.gson</groupId>
             <artifactId>gson</artifactId>
@@ -27,7 +26,9 @@
             <version>5.8.2</version>
             <scope>test</scope>
         </dependency>
-
     </dependencies>
 
+    <build>
+        <finalName>marginal-tax-calculator</finalName>
+    </build>
 </project>
