@@ -225,7 +225,7 @@ collect income tax
 Source: [IncomeTaxPro](https://www.incometaxpro.net)
 
 ## Technologies Used
-#### Main Language
+#### Project Language
 [![Java](https://img.shields.io/badge/-Java-007396?&logo=Java&logoColor=white&labelColor=grey&style=flat)](https://jdk.java.net/17/)
 
 #### Maven Dependencies
