@@ -11,7 +11,7 @@ Federal taxes are calculated based on income and filing status, following formul
 ## Setup
 To run this project, clone this repository to your machine:
 ```
-$ git clone https://hithub.com/kyleryvn/marginal-tax-calculator
+$ git clone https://github.com/kyleryvn/marginal-tax-calculator
 ```
 
 ## 2021 Federal Tax Brackets
