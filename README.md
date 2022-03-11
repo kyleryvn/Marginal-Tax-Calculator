@@ -1,4 +1,7 @@
 # Marginal Tax Calculator
+![Languages](https://img.shields.io/github/languages/count/kyleryvn/marginal-tax-calculator?style=for-the-badge)
+![Commits](https://img.shields.io/github/commit-activity/m/kyleryvn/marginal-tax-calculator?style=for-the-badge)
+
 Use this calculator to get an estimate of federal and state taxes owed.
 Federal taxes are calculated based on income and filing status, following formula given below.
 
