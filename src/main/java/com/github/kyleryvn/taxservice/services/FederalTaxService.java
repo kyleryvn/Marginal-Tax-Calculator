@@ -19,15 +19,15 @@ public class FederalTaxService {
         fedTaxRules = ResourceUtility.getResourceAsList("docs/fedTaxRules.txt", 0, convert);
     }
 
-    public static double getFederalTaxDue(String filingStatus, double salary) {
+    public static double getFederalTaxDue(String filingStatus, double income) {
         ToDoubleFunction<FederalTaxRule> map = taxRule -> {
-            double rangeTwo = Math.min(taxRule.getSalaryRangeTwo(), salary);
+            double rangeTwo = Math.min(taxRule.getSalaryRangeTwo(), income);
             return (rangeTwo - taxRule.getSalaryRangeOne()) * taxRule.getTaxRate();
         };
 
         return fedTaxRules.stream()
                 .filter(taxRule -> taxRule.getFilingStatus().equalsIgnoreCase(filingStatus))
-                .filter(taxRule -> salary > taxRule.getSalaryRangeOne())
+                .filter(taxRule -> income > taxRule.getSalaryRangeOne())
                 .mapToDouble(map)
                 .sum();
     }
