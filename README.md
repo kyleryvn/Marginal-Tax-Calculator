@@ -7,15 +7,23 @@ Federal taxes are calculated based on income and filing status, following formul
 
 ## Table of Contents
 * [Setup](#setup)
+* [Technologies](#technologies)
 * [Federal Tax Brackets](#2021-federal-tax-brackets) 
 * [State Tax Brackets](#2021-state-tax-brackets)
-* [Technologies](#technologies)
 
 ## Setup
 To run this project, clone this repository to your machine:
 ```
 $ git clone https://github.com/kyleryvn/marginal-tax-calculator
 ```
+
+## Technologies
+Project is created with:
+
+[![Java](https://img.shields.io/badge/java-jdk%2017-007396?logo=java&style=for-the-badge)](https://jdk.java.net/17/)
+[![Maven](https://img.shields.io/badge/maven-3.8.4-C71A36?logo=apache%20maven&style=for-the-badge)](https://maven.apache.org/)
+[![Gson](https://img.shields.io/badge/gson-2.9.0-4285F4?logo=google&style=for-the-badge&logoColor=white)](https://github.com/google/gson)
+[![JUnit](https://img.shields.io/badge/junit-5.8.2-25A162?logo=junit5&style=for-the-badge&logoColor=white)](https://junit.org/junit5/)
 
 ## 2021 Federal Tax Brackets
 For taxes due April 2022 or October 2022 with an extension.
@@ -233,11 +241,3 @@ collect income tax.
 * [Wisconsin](https://www.incometaxpro.net/tax-rates/wisconsin.htm)
 
 Source: [IncomeTaxPro](https://www.incometaxpro.net)
-
-## Technologies
-Project is created with:
-
-[![Java](https://img.shields.io/badge/java-jdk%2017-007396?logo=java&style=for-the-badge)](https://jdk.java.net/17/)
-[![Maven](https://img.shields.io/badge/maven-3.8.4-C71A36?logo=apache%20maven&style=for-the-badge)](https://maven.apache.org/)
-[![Gson](https://img.shields.io/badge/gson-2.9.0-4285F4?logo=google&style=for-the-badge&logoColor=white)](https://github.com/google/gson)
-[![JUnit](https://img.shields.io/badge/junit-5.8.2-25A162?logo=junit5&style=for-the-badge&logoColor=white)](https://junit.org/junit5/)
