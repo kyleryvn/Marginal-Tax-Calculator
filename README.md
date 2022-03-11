@@ -233,7 +233,8 @@ Source: [IncomeTaxPro](https://www.incometaxpro.net)
 
 ## Technologies
 Project is created with:
-* [Java](https://jdk.java.net/17/) 17
-* [Maven](https://maven.apache.org/) version 3.8.4
-* [Gson](https://github.com/google/gson) version 2.9.0
-* [JUnit](https://junit.org/junit5/) version 5.8.2
+
+[![Java](https://img.shields.io/badge/java-jdk%2017-007396?logo=java&style=for-the-badge)](https://jdk.java.net/17/)
+[![Maven](https://img.shields.io/badge/maven-3.8.4-C71A36?logo=apache%20maven&style=for-the-badge)](https://maven.apache.org/)
+[![Gson](https://img.shields.io/badge/gson-2.9.0-4285F4?logo=google&style=for-the-badge&logoColor=white)](https://github.com/google/gson)
+[![JUnit](https://img.shields.io/badge/junit-5.8.2-25A162?logo=junit5&style=for-the-badge&logoColor=white)](https://junit.org/junit5/)
