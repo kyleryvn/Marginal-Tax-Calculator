@@ -1,17 +1,7 @@
 # Marginal Tax Calculator
+## Overview
 Use this calculator to get an estimate of federal and state taxes owed.
 Federal taxes are calculated based on income and filing status, following formula given below.
-
-## Table of Contents
-* [Overview](#Overview)
-* [Federal Tax Brackets](#2021-federal-tax-brackets) 
-* [State Tax Brackets](#2021-state-tax-brackets) 
-* [Technologies](#technologies-used)
-
-## Overview
-This project started out as a school assignment, but I always wanted to add more to it. Originally, my class was tasked
-with just calculating the federal taxes due by a user. But in real life, we also play state taxes, and so I wanted to add
-that feature.
 
 ## 2021 Federal Tax Brackets
 For taxes due April 2022 or October 2022 with an extension.
