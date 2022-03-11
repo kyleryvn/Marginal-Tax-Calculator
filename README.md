@@ -191,7 +191,7 @@ Source: [Investopedia](https://www.investopedia.com/terms/t/taxbracket.asp)
 
 ## 2021 State Tax Brackets
 Each state carries its own tax laws. However, state taxes are calculated following the same formula as federal taxes. 
-Provided below are links to the difference tax brackets of all the states that collect income
+Provided below are links to the different tax brackets of all the states that collect income
 taxes. Currently, Alaska, Florida, Nevada, New Hampshire**, South Dakota, Tennessee, Texas, Washington***, and Wyoming do not
 collect income tax.
 
