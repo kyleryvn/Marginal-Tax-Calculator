@@ -4,7 +4,8 @@ salary/income
 
 ### To do
 - [ ] Add Spring support
-- [ ] Add Jython support (maybe)
+- [ ] Add Jython support
+  - [ ] Write python script for web scraping purposes
 
 ### In Progress
 
