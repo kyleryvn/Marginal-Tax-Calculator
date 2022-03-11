@@ -226,7 +226,7 @@ Source: [IncomeTaxPro](https://www.incometaxpro.net)
 
 ## Technologies
 Project is created with:
-* [Java 17](https://jdk.java.net/17/)
+* [Java](https://jdk.java.net/17/) 17
 * [Maven](https://maven.apache.org/)
-* [Gson](https://github.com/google/gson)
-* [JUnit](https://junit.org/junit5/)
+* [Gson](https://github.com/google/gson) version 5.8.2
+* [JUnit](https://junit.org/junit5/) version 2.9.0
