@@ -7,8 +7,6 @@ Federal taxes are calculated based on income and filing status, following formul
 * [State Tax Brackets](#2021-state-tax-brackets) 
 * [Technologies](#technologies-used)
 
-This project calculates your taxes owed based on in-place tax brackets for federal and state levels.
-
 ## 2021 Federal Tax Brackets
 For taxes due April 2022 or October 2022 with an extension.
 <table>
