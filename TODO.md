@@ -11,6 +11,6 @@ salary/income
 
 ### Done
 - [x] Added tax brackets for states
-- [x] Add table of contents to README.md
-  - [x] Add technologies used for project
+- [x] Added table of contents to README.md
+  - [x] Added technologies used for project
  
