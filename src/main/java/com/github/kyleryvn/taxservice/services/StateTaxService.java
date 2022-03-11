@@ -52,6 +52,10 @@ public class StateTaxService {
                 .sum();
     }
 
+    public static double getStateEffectiveRate(double totalTaxes, double income) {
+        return (totalTaxes / income) * 100;
+    }
+
     private static void setStatesWithoutIncomeTax() {
         // Alaska, Florida, Nevada, South Dakota, Texas, Tennessee,
         // Washington, and Wyoming do not collect income taxes

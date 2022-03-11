@@ -31,4 +31,8 @@ public class FederalTaxService {
                 .mapToDouble(map)
                 .sum();
     }
+
+    public static double getFederalEffectiveRate(double totalTaxes, double income) {
+        return (totalTaxes / income) * 100;
+    }
 }
