@@ -2,12 +2,6 @@
 Use this calculator to get an estimate of federal and state taxes owed.
 Federal taxes are calculated based on income and filing status, following formula given below.
 
-## Table of Contents
-* [Setup](#setup)
-* [Technologies](#technologies)
-* [Federal Tax Brackets](#2021-federal-tax-brackets) 
-* [State Tax Brackets](#2021-state-tax-brackets)
-
 ## Setup
 To run this project locally, clone this repository to your machine:
 ```
