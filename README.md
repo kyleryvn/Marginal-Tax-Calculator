@@ -203,7 +203,7 @@ The Social Security tax is only applied to the first $142,800 of self-employment
 Self-employment tax is a tax-deductible expense. While the tax is charged on a taxpayer’s business profit, the IRS lets 
 them count the "employer" half of the self-employment tax, or 7.65% (calculated as half of 15.3%), as a business deduction for purposes of calculating that taxpayer's income tax.
 
-### How to Calculate Self-Employment Tax:
+### How to Calculate Self-Employment Tax
 Calculating your tax starts by calculating your net earnings from self-employment for the year:
 * For tax purposes, net earnings usually are your gross income from self-employment minus your business expenses.
 * Generally, 92.35% of your net earnings from self-employment is subject to self-employment tax.
