@@ -30,5 +30,3 @@
 {"isChurchEmployee": true, "filingStatus": "HH", "taxRate": 0.153, "salaryRangeOne": 108.28, "salaryRangeTwo": 142800.0}
 {"isChurchEmployee": true, "filingStatus": "HH", "taxRate": 0.029, "salaryRangeOne": 142800.0, "salaryRangeTwo": 200000.0}
 {"isChurchEmployee": true, "filingStatus": "HH", "taxRate": 0.038, "salaryRangeOne": 200000.0, "salaryRangeTwo": 3.4028235E38}
-
-
