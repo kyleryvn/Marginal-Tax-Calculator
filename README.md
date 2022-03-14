@@ -194,6 +194,15 @@ Self-employment tax applies to net earnings — what many call profits.
 * A 0.9% additional Medicare tax may also apply if your net earnings from self-employment exceed $200,000 if you’re a single filer or 
 $250,000 if you’re filing jointly,
 
+How to calculate self-employment tax:
+* Once you’ve determined how much of your net earnings from self-employment are subject to tax, apply the 15.3% tax rate.
+
+Who has to pay self-employment tax? 
+In general, you have to pay self-employment tax if either of these things are true during the year:
+* You had $400 or more in net earnings from self-employment (excluding anything you made as a church employee). You may be self-employed in the eyes of the IRS if you received a 1099 form from an entity you did work for.
+* You had $108.28 or more in income from church employment.
+
+The tax rules apply no matter how old you are and even if you’re receiving Social Security or are on Medicare.
 
 Source: [Nerdwallet](https://www.nerdwallet.com/article/taxes/self-employment-tax)
 
