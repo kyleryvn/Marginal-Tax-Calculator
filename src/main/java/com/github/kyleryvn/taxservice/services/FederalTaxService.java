@@ -1,6 +1,7 @@
 package com.github.kyleryvn.taxservice.services;
 
 import com.github.kyleryvn.taxservice.model.FederalTaxRule;
+import com.github.kyleryvn.taxservice.model.SelfEmployedTaxRule;
 import com.github.kyleryvn.taxservice.utility.ResourceUtility;
 import com.google.gson.Gson;
 
@@ -10,13 +11,18 @@ import java.util.function.ToDoubleFunction;
 
 public class FederalTaxService {
     private static final List<FederalTaxRule> fedTaxRules;
+    private static final List<SelfEmployedTaxRule> selfEmployedTaxRules;
 
     static {
         Gson gson = new Gson();
 
         // Create FederalTaxRule objects from JSON data
-        Function<String, FederalTaxRule> convert = json -> gson.fromJson(json, FederalTaxRule.class);
-        fedTaxRules = ResourceUtility.getResourceAsList("docs/fedTaxRules.txt", 0, convert);
+        Function<String, FederalTaxRule> convertTaxes = json -> gson.fromJson(json, FederalTaxRule.class);
+        fedTaxRules = ResourceUtility.getResourceAsList("docs/fedTaxRules.txt", 0, convertTaxes);
+
+        // Create SelfEmployedTaxRule object from JSON data
+        Function<String, SelfEmployedTaxRule> convertSelfTaxes = json -> gson.fromJson(json, SelfEmployedTaxRule.class);
+        selfEmployedTaxRules = ResourceUtility.getResourceAsList("docs/fedSelfEmployedTaxRule.txt", 0, convertSelfTaxes);
     }
 
     public static double getFederalTaxDue(String filingStatus, double income) {
@@ -32,17 +38,38 @@ public class FederalTaxService {
                 .sum();
     }
 
-    public static double getFederalSelfEmploymentTaxDue(double income, boolean isChurchEmployee) {
-        if (income >= 400 && !isChurchEmployee) {
-            return income * 0.153;
-        } else if (income >= 108.28 && isChurchEmployee) {
-            return income * 0.153;
-        } else {
-            return 0;
-        }
+    public static double getFederalSelfEmploymentTaxDue(String filingStatus, double income, boolean isChurchEmployee) {
+        double taxableIncome = income * 0.9235;
+
+        ToDoubleFunction<SelfEmployedTaxRule> map = taxRule -> {
+            double rangeTwo = Math.min(taxRule.getSalaryRangeTwo(), taxableIncome);
+            return (rangeTwo - taxRule.getSalaryRangeOne()) * taxRule.getTaxRate();
+        };
+
+        return selfEmployedTaxRules.stream()
+                .filter(taxRule -> taxRule.isChurchEmployee() == isChurchEmployee)
+                .filter(taxRule -> taxRule.getFilingStatus().equalsIgnoreCase(filingStatus))
+                .filter(taxRule -> taxableIncome > taxRule.getSalaryRangeOne())
+                .mapToDouble(map)
+                .sum();
     }
 
     public static double getFederalEffectiveRate(double totalTaxes, double income) {
         return (totalTaxes / income) * 100;
     }
 }
+
+
+/*
+double tax = 0.124 * 142_800;
+
+            if (taxableIncome <= 142_800) {
+                tax += taxableIncome * 0.029;
+            } else {
+                tax += (taxableIncome * 0.029) + (taxableIncome * 0.009);
+            }
+
+            taxDue += tax;
+
+            return taxDue;
+ */
