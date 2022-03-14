@@ -184,30 +184,25 @@ The individual’s effective tax rate is approximately 13.5% of income:
 
 Source: [Investopedia](https://www.investopedia.com/terms/t/taxbracket.asp)
 
-### Self-Employment Tax
+## 2021 Self-Employment Tax
 The self-employment tax rate is 15.3%. That rate is the sum of a 12.4% for Social Security and 2.9% for Medicare. 
-Self-employment tax applies to net earnings — what many call profits.
+Self-employment tax applies to net earnings — what many call profits (you may need to pay self-employment taxes throughout the year).
 
-It should be noted that anytime self-employment tax is mentioned, it only refers to Social Security and Medicare taxes 
-and does not include any other taxes that self-employed individuals may be required to file.
+Self-employment tax is due when an individual has net earnings of $400 or more in self-employment income over the course of the tax year, or $108.28 or more from a tax-exempt church.
+Self-employed people who make less than these thresholds from self-employment don’t have to pay any tax.
 
 ***Self-employment tax is not the same as income tax!***
 
+As noted, the self-employment tax rate is 15.3% of net earnings. However:
 * For the 2021 tax year, the first $142,800 of earnings is subject to the Social Security portion. In 2022, it rises to $147,000
-* A 0.9% additional Medicare tax may also apply if your net earnings from self-employment exceed $200,000 if you’re a single filer or 
-$250,000 if you’re filing jointly,
+* A 0.9% additional Medicare tax may also apply if your net earnings from self-employment exceed $200,000 if you’re a single filer or $250,000 if you’re filing jointly.
 
-How to calculate self-employment tax:
-* Once you’ve determined how much of your net earnings from self-employment are subject to tax, apply the 15.3% tax rate.
+Self-employment tax is a tax-deductible expense. While the tax is charged on a taxpayer’s business profit, the IRS lets 
+them count the "employer" half of the self-employment tax, or 7.65% (calculated as half of 15.3%), as a business deduction for purposes of calculating that taxpayer's income tax.
 
-Who has to pay self-employment tax? 
-In general, you have to pay self-employment tax if either of these things are true during the year:
-* You had $400 or more in net earnings from self-employment (excluding anything you made as a church employee). You may be self-employed in the eyes of the IRS if you received a 1099 form from an entity you did work for.
-* You had $108.28 or more in income from church employment.
 
-The tax rules apply no matter how old you are and even if you’re receiving Social Security or are on Medicare.
 
-Source: [Nerdwallet](https://www.nerdwallet.com/article/taxes/self-employment-tax)
+Sources: [Investopedia](https://www.investopedia.com/terms/s/selfemploymenttax.asp), [Nerdwallet](https://www.nerdwallet.com/article/taxes/self-employment-tax)
 
 ## 2021 State Tax Brackets
 Each state carries its own tax laws. However, state taxes are calculated following the same formula as federal taxes. 
