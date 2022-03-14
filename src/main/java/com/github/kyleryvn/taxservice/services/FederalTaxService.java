@@ -43,7 +43,7 @@ public class FederalTaxService {
 
         ToDoubleFunction<SelfEmployedTaxRule> map = taxRule -> {
             double rangeTwo = Math.min(taxRule.getSalaryRangeTwo(), taxableIncome);
-            return (rangeTwo - taxRule.getSalaryRangeOne()) * taxRule.getTaxRate();
+            return rangeTwo * taxRule.getTaxRate();
         };
 
         return selfEmployedTaxRules.stream()
