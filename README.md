@@ -185,38 +185,50 @@ The individual’s effective tax rate is approximately 13.5% of income:
 Source: [Investopedia](https://www.investopedia.com/terms/t/taxbracket.asp)
 
 ## 2021 Self-Employment Tax
-The self-employment tax rate is 15.3%. That rate is the sum of a 12.4% for Social Security and 2.9% for Medicare. 
-Self-employment tax applies to net earnings — what many call profits (you may need to pay self-employment taxes throughout the year).
+Self-employment tax is the imposed tax that a small business owner must pay to the federal government to fund Medicare and Social Security, similar to FICA taxes paid by an employer.
+Self-employment tax is due when: 
+* An individual has net earnings of $400 or more in self-employment income over the course of the tax year.
+* An individual has net earnings of $108.28 or more from a tax-exempt church.
 
-Self-employment tax is due when an individual has net earnings of $400 or more in self-employment income over the course of the tax year, or $108.28 or more from a tax-exempt church.
 Self-employed people who make less than these thresholds from self-employment don’t have to pay any tax.
 
+The self-employment tax rate is 15.3% of net earnings.
+That rate is the sum of a 12.4% Social Security tax and a 2.9% Medicare tax on net earnings.
 ***Self-employment tax is not the same as income tax!***
 
-As noted, the self-employment tax rate is 15.3% of net earnings. However, high-earning tax filers are also responsible for paying an additional Medicare tax of 0.9% on income above the following thresholds, depending on their filing status:
+For 2021, the Social Security wage base is $142,800. This means that in 2021, Social Security tax only applies to the first $142,800 
+of your earned income from wages and self-employment. After that, you aren’t charged any additional Social Security tax. 
+There is no limit on the Medicare portion of self-employment tax. So no matter how much you earn, the Medicare tax applies to all of your wages and self-employment income.
+
+Individuals typically pay self-employment tax on 92.35% of their net earnings, not 100%. Why?
+Because the 7.65% deduction takes into account the employer-half of your FICA taxes, which the business would deduct if you were paid as an employee.
+
+High-earning tax filers are also responsible for paying an additional Medicare tax of 0.9% on income above the following thresholds, depending on their filing status:
 * Married filing jointly: $250,000
 * Married filing separately: $125,000
 * All other filing statuses: $200,000
 
-The Social Security tax is only applied to the first $142,800 of self-employment income earned, for a maximum tax of $17,707.20 in the tax year 2021; in 2022, it's the first $147,000 of income, for a tax max of $18,228.
-
-Self-employment tax is a tax-deductible expense. While the tax is charged on a taxpayer’s business profit, the IRS lets 
-them count the "employer" half of the self-employment tax, or 7.65% (calculated as half of 15.3%), as a business deduction for purposes of calculating that taxpayer's income tax.
-
-### How to Calculate Self-Employment Tax
-Calculating your tax starts by calculating your net earnings from self-employment for the year:
-* For tax purposes, net earnings usually are your gross income from self-employment minus your business expenses.
-* Generally, 92.35% of your net earnings from self-employment is subject to self-employment tax.
-* Once you’ve determined how much of your net earnings from self-employment are subject to tax, apply the 15.3% tax rate.
-* Remember, though — for 2021, only the first $142,800 ($147,000 in 2022) of earnings is subject to the Social Security portion of self-employment tax.
-
-Example:
-* Robin, who runs a human resources consulting business, calculates their total net income for 2021 to be $200,000 after business expenses have been deducted.
-* Their self-employment tax will be assessed on 92.35% * $200,000 = $184,700
-* This amount is above the capped limit for the Social Security portion of the self-employment tax. Therefore, Robin's self-employment tax bill will be (12.4% * $137,700 = $17,074.80) + (2.9% * $184,700 = $5,356.30) = $22,431.10
-
-When Robin files their 2021 income tax return, they can claim an above-the-line deduction for half of their self-employment tax, or $22,431.10 ÷ 2 = $11,215.55. 
+When filing their 2021 income tax return, self-employed individuals can claim an above-the-line deduction for half of their self-employment tax.
 In effect, they get a deduction on the "employer" portion (6.2% Social Security + 1.45% Medicare = 7.65%) of their self-employment tax.
+
+### Example of Self-Employment Tax
+#### Example 1:
+For example, say you have a full-time job earning $150,000 for the tax year. You also have a side hustle making custom party cakes that brings in an additional $20,000 per year.
+In 2021, Since you’ve already reached the Social Security wage base, you wouldn’t have to pay the 12.4% Social Security portion of self-employment taxes on your side hustle income. You’d only have to pay the 2.9% Medicare portion of self-employment tax.
+
+#### Example 2:
+Let’s say your net income from self-employment in 2021 is $100,000. To find the taxable amount, multiply $100,000 by 92.35%.
+Then, multiply your self-employment taxable income by the 15.3% self-employment tax rate.
+* $92,350 x .153 = $14,130
+
+Your self-employment taxes are $14,130 (rounded).
+
+#### Example 3:
+Robin, who runs a human resources consulting business, calculates their total net income for 2020 to be $200,000 after business expenses have been deducted. Their self-employment tax will be assessed on 92.35% * $200,000 = $184,700.
+This amount is above the capped limit for the Social Security portion of the self-employment tax. Therefore, Robin's self-employment tax bill will be:
+* (12.4% * $137,700 = $17,074.80) + (2.9% * $184,700 = $5,356.30) = $22,431.10
+
+
 
 Sources: [Investopedia](https://www.investopedia.com/terms/s/selfemploymenttax.asp), [Nerdwallet](https://www.nerdwallet.com/article/taxes/self-employment-tax), 
 [Bench](https://bench.co/blog/tax-tips/self-employment-tax/)
