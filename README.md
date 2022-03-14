@@ -162,6 +162,9 @@ For taxes due April 2022 or October 2022 with an extension.
     </tbody>
 </table>
 
+When determining which tax bracket to use, a taxpayer should first calculate their taxable income, including earned and 
+investment income minus adjustments and deductions.
+
 ### Example of Tax Brackets
 * Single filers with less than $9,950 in taxable income are subject to a 10% income tax rate (the lowest bracket)
 * Single filers who earn more than $9,950 will have the first $9,950 taxed at 10%, but earnings beyond the first bracket and up to $40,525 will be taxed at a 12% rate (the next bracket)
