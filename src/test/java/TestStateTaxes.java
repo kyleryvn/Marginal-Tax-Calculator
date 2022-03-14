@@ -52,8 +52,8 @@ public class TestStateTaxes {
     @Test
     @DisplayName("Test Florida")
     void testFlorida() {
-        double salary = 50_000;
-        double taxDue = StateTaxService.getStateTaxDue("FL", "HH", salary);
+        double salary = 20_914; // taxable income
+        double taxDue = StateTaxService.getStateTaxDue("NY", "S", salary);
         String taxFormatted = NumberFormat.getCurrencyInstance(Locale.US).format(taxDue);
         System.out.println("Tax due: " + taxFormatted);
     }
