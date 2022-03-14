@@ -32,6 +32,16 @@ public class FederalTaxService {
                 .sum();
     }
 
+    public static double getFederalSelfEmploymentTaxDue(double income, boolean isChurchEmployee) {
+        if (income >= 400 && !isChurchEmployee) {
+            return income * 0.153;
+        } else if (income >= 108.28 && isChurchEmployee) {
+            return income * 0.153;
+        } else {
+            return 0;
+        }
+    }
+
     public static double getFederalEffectiveRate(double totalTaxes, double income) {
         return (totalTaxes / income) * 100;
     }
