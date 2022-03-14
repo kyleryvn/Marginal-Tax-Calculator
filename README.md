@@ -186,7 +186,10 @@ Source: [Investopedia](https://www.investopedia.com/terms/t/taxbracket.asp)
 
 ### Self-Employment Tax
 The self-employment tax rate is 15.3%. That rate is the sum of a 12.4% for Social Security and 2.9% for Medicare. 
-Self-employment tax applies to net earnings — what many call profits. 
+Self-employment tax applies to net earnings — what many call profits.
+
+It should be noted that anytime self-employment tax is mentioned, it only refers to Social Security and Medicare taxes 
+and does not include any other taxes that self-employed individuals may be required to file.
 
 ***Self-employment tax is not the same as income tax!***
 
