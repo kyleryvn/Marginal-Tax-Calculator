@@ -22,7 +22,7 @@ public class FederalTaxService {
 
         // Create SelfEmployedTaxRule object from JSON data
         Function<String, SelfEmployedTaxRule> convertSelfTaxes = json -> gson.fromJson(json, SelfEmployedTaxRule.class);
-        selfEmployedTaxRules = ResourceUtility.getResourceAsList("docs/fedSelfEmployedTaxRule.txt", 0, convertSelfTaxes);
+        selfEmployedTaxRules = ResourceUtility.getResourceAsList("docs/fedSelfEmployedTaxRules.txt", 0, convertSelfTaxes);
     }
 
     public static double getFederalTaxDue(String filingStatus, double income) {
