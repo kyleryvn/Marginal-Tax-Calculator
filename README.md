@@ -226,7 +226,7 @@ Your self-employment taxes are $14,130 (rounded).
 #### Example 3:
 Robin, who runs a human resources consulting business, calculates their total net income for 2020 to be $200,000 after business expenses have been deducted. Their self-employment tax will be assessed on 92.35% * $200,000 = $184,700.
 This amount is above the capped limit for the Social Security portion of the self-employment tax. Therefore, Robin's self-employment tax bill will be:
-* (12.4% * $137,700 = $17,074.80) + (2.9% * $184,700 = $5,356.30) = $22,431.10
+* (12.4% * $142,800 = $17,707.20) + (2.9% * $184,700 = $5,356.30) = $23,063.50
 
 Robin decides to claim an above the line deduction for half of their self-employment tax, bringing their tax due to $11,215.55.
 
