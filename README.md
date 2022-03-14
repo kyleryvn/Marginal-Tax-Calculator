@@ -228,7 +228,7 @@ Robin, who runs a human resources consulting business, calculates their total ne
 This amount is above the capped limit for the Social Security portion of the self-employment tax. Therefore, Robin's self-employment tax bill will be:
 * (12.4% * $137,700 = $17,074.80) + (2.9% * $184,700 = $5,356.30) = $22,431.10
 
-
+Robin decides to claim an above the line deduction for half of their self-employment tax, bringing their tax due to $11,215.55.
 
 Sources: [Investopedia](https://www.investopedia.com/terms/s/selfemploymenttax.asp), [Nerdwallet](https://www.nerdwallet.com/article/taxes/self-employment-tax), 
 [Bench](https://bench.co/blog/tax-tips/self-employment-tax/)
