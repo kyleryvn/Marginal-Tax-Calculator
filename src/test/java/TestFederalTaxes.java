@@ -7,6 +7,8 @@ import org.junit.jupiter.api.Test;
 import java.util.List;
 import java.util.function.Function;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 public class TestFederalTaxes {
 
     @Test
@@ -19,10 +21,9 @@ public class TestFederalTaxes {
 
     @Test
     void testSelfEmployedTaxes() {
-        double income = 50_000;
-        String filingStatus = "S";
-        boolean isChurchEmployee = false;
-        double taxDue = FederalTaxService.getFederalSelfEmploymentTaxDue(filingStatus, income, isChurchEmployee);
-        System.out.println(taxDue);
+        double expected = 182.271195;
+        double taxDue = FederalTaxService.getFederalSelfEmploymentTaxDue("S", 1290, false, false);
+
+        assertEquals(expected, taxDue);
     }
 }
