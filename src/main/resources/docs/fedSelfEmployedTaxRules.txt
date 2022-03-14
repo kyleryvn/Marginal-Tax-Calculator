@@ -1,0 +1,34 @@
+{"isChurchEmployee": false, "filingStatus": "S", "taxRate": 0.0, "salaryRangeOne": 0.0, "salaryRangeTwo": 400.0}
+{"isChurchEmployee": false, "filingStatus": "S", "taxRate": 0.153, "salaryRangeOne": 400.0, "salaryRangeTwo": 142800.0}
+{"isChurchEmployee": false, "filingStatus": "S", "taxRate": 0.029, "salaryRangeOne": 142800.0, "salaryRangeTwo": 200000.0}
+{"isChurchEmployee": false, "filingStatus": "S", "taxRate": 0.038, "salaryRangeOne": 200000.0, "salaryRangeTwo": 3.4028235E38}
+{"isChurchEmployee": false, "filingStatus": "MFJ", "taxRate": 0.0, "salaryRangeOne": 0.0, "salaryRangeTwo": 400.0}
+{"isChurchEmployee": false, "filingStatus": "MFJ", "taxRate": 0.153, "salaryRangeOne": 400.0, "salaryRangeTwo": 142800.0}
+{"isChurchEmployee": false, "filingStatus": "MFJ", "taxRate": 0.029, "salaryRangeOne": 142800.0, "salaryRangeTwo": 250000.0}
+{"isChurchEmployee": false, "filingStatus": "MFJ", "taxRate": 0.038, "salaryRangeOne": 250000.0, "salaryRangeTwo": 3.4028235E38}
+{"isChurchEmployee": false, "filingStatus": "MFS", "taxRate": 0.0, "salaryRangeOne": 0.0, "salaryRangeTwo": 400.0}
+{"isChurchEmployee": false, "filingStatus": "MFS", "taxRate": 0.162, "salaryRangeOne": 400.0, "salaryRangeTwo": 125000.0}
+{"isChurchEmployee": false, "filingStatus": "MFS", "taxRate": 0.153, "salaryRangeOne": 125000.0, "salaryRangeTwo": 142800.0}
+{"isChurchEmployee": false, "filingStatus": "MFS", "taxRate": 0.029, "salaryRangeOne": 142800.0, "salaryRangeTwo": 3.4028235E38}
+{"isChurchEmployee": false, "filingStatus": "HH", "taxRate": 0.0, "salaryRangeOne": 0.0, "salaryRangeTwo": 400.0}
+{"isChurchEmployee": false, "filingStatus": "HH", "taxRate": 0.153, "salaryRangeOne": 400.0, "salaryRangeTwo": 142800.0}
+{"isChurchEmployee": false, "filingStatus": "HH", "taxRate": 0.029, "salaryRangeOne": 142800.0, "salaryRangeTwo": 200000.0}
+{"isChurchEmployee": false, "filingStatus": "HH", "taxRate": 0.038, "salaryRangeOne": 200000.0, "salaryRangeTwo": 3.4028235E38}
+{"isChurchEmployee": true, "filingStatus": "S", "taxRate": 0.0, "salaryRangeOne": 0.0, "salaryRangeTwo": 108.28}
+{"isChurchEmployee": true, "filingStatus": "S", "taxRate": 0.153, "salaryRangeOne": 108.28, "salaryRangeTwo": 142800.0}
+{"isChurchEmployee": true, "filingStatus": "S", "taxRate": 0.029, "salaryRangeOne": 142800.0, "salaryRangeTwo": 200000.0}
+{"isChurchEmployee": true, "filingStatus": "S", "taxRate": 0.038, "salaryRangeOne": 200000.0, "salaryRangeTwo": 3.4028235E38}
+{"isChurchEmployee": true, "filingStatus": "MFJ", "taxRate": 0.0, "salaryRangeOne": 0.0, "salaryRangeTwo": 108.28}
+{"isChurchEmployee": true, "filingStatus": "MFJ", "taxRate": 0.153, "salaryRangeOne": 108.28, "salaryRangeTwo": 142800.0}
+{"isChurchEmployee": true, "filingStatus": "MFJ", "taxRate": 0.029, "salaryRangeOne": 142800.0, "salaryRangeTwo": 250000.0}
+{"isChurchEmployee": true, "filingStatus": "MFJ", "taxRate": 0.038, "salaryRangeOne": 250000.0, "salaryRangeTwo": 3.4028235E38}
+{"isChurchEmployee": true, "filingStatus": "MFS", "taxRate": 0.0, "salaryRangeOne": 0.0, "salaryRangeTwo": 108.28}
+{"isChurchEmployee": true, "filingStatus": "MFS", "taxRate": 0.162, "salaryRangeOne": 108.28, "salaryRangeTwo": 125000.0}
+{"isChurchEmployee": true, "filingStatus": "MFS", "taxRate": 0.153, "salaryRangeOne": 125000.0, "salaryRangeTwo": 142800.0}
+{"isChurchEmployee": true, "filingStatus": "MFS", "taxRate": 0.029, "salaryRangeOne": 142800.0, "salaryRangeTwo": 3.4028235E38}
+{"isChurchEmployee": true, "filingStatus": "HH", "taxRate": 0.0, "salaryRangeOne": 0.0, "salaryRangeTwo": 108.28}
+{"isChurchEmployee": true, "filingStatus": "HH", "taxRate": 0.153, "salaryRangeOne": 108.28, "salaryRangeTwo": 142800.0}
+{"isChurchEmployee": true, "filingStatus": "HH", "taxRate": 0.029, "salaryRangeOne": 142800.0, "salaryRangeTwo": 200000.0}
+{"isChurchEmployee": true, "filingStatus": "HH", "taxRate": 0.038, "salaryRangeOne": 200000.0, "salaryRangeTwo": 3.4028235E38}
+
+
