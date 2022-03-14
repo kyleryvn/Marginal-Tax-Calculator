@@ -9,7 +9,8 @@ salary/income
   - [ ] Write python script for web scraping purposes (in order to grab tax bracket data)
 
 ### In Progress
-- [ ] Account for self-employment tax 
+- [ ] Account for self-employment tax
+  - [ ] Account for individuals with earned income and self-employment income in same tax year
 
 ### Done
 - [x] Added tax brackets for states
