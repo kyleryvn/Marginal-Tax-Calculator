@@ -200,7 +200,20 @@ As noted, the self-employment tax rate is 15.3% of net earnings. However:
 Self-employment tax is a tax-deductible expense. While the tax is charged on a taxpayer’s business profit, the IRS lets 
 them count the "employer" half of the self-employment tax, or 7.65% (calculated as half of 15.3%), as a business deduction for purposes of calculating that taxpayer's income tax.
 
+### How to Calculate Self-Employment Tax:
+Calculating your tax starts by calculating your net earnings from self-employment for the year:
+* For tax purposes, net earnings usually are your gross income from self-employment minus your business expenses.
+* Generally, 92.35% of your net earnings from self-employment is subject to self-employment tax.
+* Once you’ve determined how much of your net earnings from self-employment are subject to tax, apply the 15.3% tax rate.
+* Remember, though — for 2021, only the first $142,800 ($147,000 in 2022) of earnings is subject to the Social Security portion of self-employment tax.
 
+Example:
+* Robin, who runs a human resources consulting business, calculates their total net income for 2021 to be $200,000 after business expenses have been deducted.
+* Their self-employment tax will be assessed on 92.35% * $200,000 = $184,700
+* This amount is above the capped limit for the Social Security portion of the self-employment tax. Therefore, Robin's self-employment tax bill will be (12.4% * $137,700 = $17,074.80) + (2.9% * $184,700 = $5,356.30) = $22,431.10
+
+When Robin files their 2021 income tax return, they can claim an above-the-line deduction for half of their self-employment tax, or $22,431.10 ÷ 2 = $11,215.55. 
+In effect, they get a deduction on the "employer" portion (6.2% Social Security + 1.45% Medicare = 7.65%) of their self-employment tax.
 
 Sources: [Investopedia](https://www.investopedia.com/terms/s/selfemploymenttax.asp), [Nerdwallet](https://www.nerdwallet.com/article/taxes/self-employment-tax)
 
