@@ -218,7 +218,8 @@ Example:
 When Robin files their 2021 income tax return, they can claim an above-the-line deduction for half of their self-employment tax, or $22,431.10 ÷ 2 = $11,215.55. 
 In effect, they get a deduction on the "employer" portion (6.2% Social Security + 1.45% Medicare = 7.65%) of their self-employment tax.
 
-Sources: [Investopedia](https://www.investopedia.com/terms/s/selfemploymenttax.asp), [Nerdwallet](https://www.nerdwallet.com/article/taxes/self-employment-tax)
+Sources: [Investopedia](https://www.investopedia.com/terms/s/selfemploymenttax.asp), [Nerdwallet](https://www.nerdwallet.com/article/taxes/self-employment-tax), 
+[Bench](https://bench.co/blog/tax-tips/self-employment-tax/)
 
 ## 2021 State Tax Brackets
 Each state carries its own tax laws. However, state taxes are calculated following the same formula as federal taxes. 
