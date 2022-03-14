@@ -197,6 +197,8 @@ As noted, the self-employment tax rate is 15.3% of net earnings. However:
 * For the 2021 tax year, the first $142,800 of earnings is subject to the Social Security portion. In 2022, it rises to $147,000
 * A 0.9% additional Medicare tax may also apply if your net earnings from self-employment exceed $200,000 if you’re a single filer or $250,000 if you’re filing jointly.
 
+The Social Security tax is only applied to the first $142,800 of self-employment income earned, for a maximum tax of $17,707.20 in the tax year 2021; in 2022, it's the first $147,000 of income, for a tax max of $18,228.
+
 Self-employment tax is a tax-deductible expense. While the tax is charged on a taxpayer’s business profit, the IRS lets 
 them count the "employer" half of the self-employment tax, or 7.65% (calculated as half of 15.3%), as a business deduction for purposes of calculating that taxpayer's income tax.
 
