@@ -184,6 +184,19 @@ The individual’s effective tax rate is approximately 13.5% of income:
 
 Source: [Investopedia](https://www.investopedia.com/terms/t/taxbracket.asp)
 
+### Self-Employment Tax
+The self-employment tax rate is 15.3%. That rate is the sum of a 12.4% for Social Security and 2.9% for Medicare. 
+Self-employment tax applies to net earnings — what many call profits. 
+
+***Self-employment tax is not the same as income tax!***
+
+* For the 2021 tax year, the first $142,800 of earnings is subject to the Social Security portion. In 2022, it rises to $147,000
+* A 0.9% additional Medicare tax may also apply if your net earnings from self-employment exceed $200,000 if you’re a single filer or 
+$250,000 if you’re filing jointly,
+
+
+Source: [Nerdwallet](https://www.nerdwallet.com/article/taxes/self-employment-tax)
+
 ## 2021 State Tax Brackets
 Each state carries its own tax laws. However, state taxes are calculated following the same formula as federal taxes. 
 Provided below are links to the different tax brackets of all the states that collect income
