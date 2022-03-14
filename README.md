@@ -193,9 +193,10 @@ Self-employed people who make less than these thresholds from self-employment do
 
 ***Self-employment tax is not the same as income tax!***
 
-As noted, the self-employment tax rate is 15.3% of net earnings. However:
-* For the 2021 tax year, the first $142,800 of earnings is subject to the Social Security portion. In 2022, it rises to $147,000
-* A 0.9% additional Medicare tax may also apply if your net earnings from self-employment exceed $200,000 if you’re a single or head of household filer, $250,000 if you’re married filing jointly, and $125,000 for married filing separately.
+As noted, the self-employment tax rate is 15.3% of net earnings. However, high-earning tax filers are also responsible for paying an additional Medicare tax of 0.9% on income above the following thresholds, depending on their filing status:
+* Married filing jointly: $250,000
+* Married filing separately: $125,000
+* All other filing statuses: $200,000
 
 The Social Security tax is only applied to the first $142,800 of self-employment income earned, for a maximum tax of $17,707.20 in the tax year 2021; in 2022, it's the first $147,000 of income, for a tax max of $18,228.
 
