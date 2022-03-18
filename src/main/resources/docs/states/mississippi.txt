@@ -14,4 +14,3 @@
 {"taxRate": 0.03" "filingStatus": "HH", "salaryRangeOne": 1000.0, "salaryRangeTwo": 5000.0}
 {"taxRate": 0.04, "filingStatus": "HH", "salaryRangeOne": 5000.0, "salaryRangeTwo": 10000.0}
 {"taxRate": 0.05, "filingStatus": "HH", "salaryRangeOne": 10000.0, "salaryRangeTwo": 3.4028235E38}
-
