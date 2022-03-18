@@ -38,7 +38,8 @@ public class FederalTaxService {
                 .sum();
     }
 
-    public static double getFederalSelfEmploymentTaxDue(String filingStatus, double income, boolean isChurchEmployee) {
+    public static double getFederalSelfEmploymentTaxDue(String filingStatus, double income, boolean isChurchEmployee,
+                                                        boolean claimDeduction) {
         double taxableIncome = income * 0.9235;
 
         ToDoubleFunction<SelfEmployedTaxRule> map = taxRule -> {
