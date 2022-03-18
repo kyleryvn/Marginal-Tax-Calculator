@@ -37,6 +37,7 @@ public class StateTaxService {
 
         } else {
             System.out.println("ERROR: Invalid state");
+            return 0;
         }
 
         ToDoubleFunction<StateTaxRule> map = taxRule -> {
