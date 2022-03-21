@@ -1,6 +1,6 @@
 # Marginal Tax Calculator
 Use this calculator to get an estimate of federal and state taxes owed.
-Federal taxes are calculated based on income and filing status, following formula given below.
+Federal taxes are calculated based on income and filing status, following formula given below. State taxes follow the same formula, given different tax rates per state. See states below for tax brackets of each state.
 
 ## Setup
 To run this project locally, clone this repository to your machine:
@@ -234,8 +234,7 @@ Sources: [Investopedia](https://www.investopedia.com/terms/s/selfemploymenttax.a
 [Bench](https://bench.co/blog/tax-tips/self-employment-tax/)
 
 ## 2021 State Tax Brackets
-Each state carries its own tax laws. However, state taxes are calculated following the same formula as federal taxes. 
-Provided below are links to the different tax brackets of all the states that collect income
+Each state carries its own tax laws. Provided below are links to the different tax brackets of all the states that collect income
 taxes. Currently, Alaska, Florida, Nevada, New Hampshire**, South Dakota, Tennessee, Texas, Washington***, and Wyoming do not
 collect income tax.
 
