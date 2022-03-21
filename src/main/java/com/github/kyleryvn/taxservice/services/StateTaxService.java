@@ -14,7 +14,7 @@ public class StateTaxService {
 
     public static double getStateTaxDue(String stateAbbreviation, String filingStatus, double income) {
         Map<String, String> stateURLS = new StateDAO().getStateURLS();
-        List<StateTaxRule> stateTaxRules = new ArrayList<>();
+        List<StateTaxRule> stateTaxRules;
         setStatesWithoutIncomeTax();
 
         if (stateURLS.containsKey(stateAbbreviation)) {
