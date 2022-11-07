@@ -1,6 +1,7 @@
 import com.github.kyleryvn.taxservice.dao.StateDAO;
 import com.github.kyleryvn.taxservice.services.StateTaxService;
 import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.Test;
 
 import java.text.NumberFormat;
@@ -11,6 +12,7 @@ import java.util.Map;
 public class TestStateTaxes {
 
     @Test
+    @Order(1)
     @DisplayName("Test getting data from HashMap")
     void t1() {
         Map<String, String> map = new StateDAO().getStateURLS();

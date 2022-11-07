@@ -59,18 +59,3 @@ public class FederalTaxService {
         return (totalTaxes / income) * 100;
     }
 }
-
-
-/*
-double tax = 0.124 * 142_800;
-
-            if (taxableIncome <= 142_800) {
-                tax += taxableIncome * 0.029;
-            } else {
-                tax += (taxableIncome * 0.029) + (taxableIncome * 0.009);
-            }
-
-            taxDue += tax;
-
-            return taxDue;
- */

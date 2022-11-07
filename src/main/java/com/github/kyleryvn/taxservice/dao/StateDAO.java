@@ -34,7 +34,7 @@ public class StateDAO {
              JsonReader jsonReader = new JsonReader(bufferedReader)) {
 
             try (jsonReader) {
-                // to accept malformed JSON
+                // To accept malformed JSON
                 // If you can't easily figure out what's causing extra characters at the end and eliminate them,
                 // another option is to tell GSON to parse in lenient mode:
                 jsonReader.setLenient(true);
