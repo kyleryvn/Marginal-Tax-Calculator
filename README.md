@@ -6,7 +6,7 @@ Federal taxes are calculated based on income and filing status, following formul
 To run this project locally, clone this repository to your machine:
 ```
 $ cd ../marginal-tax-calculator
-$ git clone https://github.com/kyleryvn/marginal-tax-calculator
+$ git clone https://github.com/kyleryxn/marginal-tax-calculator
 ```
 
 ## Technologies
