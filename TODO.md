@@ -6,8 +6,6 @@ salary/income
 - [ ] Implement Http GET method to retrieve tax data online 
 - [ ] Add Spring support
   - [ ] Implement Sprint Boot with Thymeleaf
-- [ ] Add Jython support
-  - [ ] Write python script for web scraping purposes (in order to grab tax bracket data)
 
 ### In Progress
 - [ ] Account for self-employment tax
@@ -15,5 +13,6 @@ salary/income
 
 ### Done
 - [x] Added tax brackets for states
+  - [x] Added web scrapping support for state tax brackets
 - [x] Added technologies used for project
  
