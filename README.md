@@ -283,4 +283,4 @@ collect income tax.
 * [West Virginia](https://www.incometaxpro.net/tax-rates/west-virginia.htm)
 * [Wisconsin](https://www.incometaxpro.net/tax-rates/wisconsin.htm)
 
-Source: [IncomeTaxPro](https://www.incometaxpro.net)
+Source: [IncomeTaxPro](https://www.incometaxpro.net/tax-rates)
