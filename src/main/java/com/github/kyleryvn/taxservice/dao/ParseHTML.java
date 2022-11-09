@@ -67,7 +67,7 @@ public class ParseHTML {
      * </p>
      * @param filingStatus The filing status of the individual
      * @param elements Array containing various HTML tags
-     * @return A {@link  List} containing {@link StateTaxRule} objects
+     * @return A {@link List} containing {@link StateTaxRule} objects
      */
     private static List<StateTaxRule> extractData(String filingStatus, Elements elements) {
         List<StateTaxRule> stateData = new ArrayList<>();
