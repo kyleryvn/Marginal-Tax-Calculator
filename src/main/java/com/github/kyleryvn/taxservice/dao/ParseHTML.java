@@ -10,29 +10,8 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * <h3>Parse HTML</h3>
- * <p>
- *     This class parses HTML data into Java objects
- * </p>
- *
- * @author Kyle Schoenhardt
- * @version 1.1.0
- * @since 2022-11-08
- */
 public class ParseHTML {
 
-    /**
-     * <p>
-     *     Retrieves state's tax data by filtering filing status through the tables provided
-     *     on the webpage. Valid filing statuses are "S" for Single, "MFJ" for Married Filing Jointly,
-     *     "MFS" for Married Filing Separately, or "HH" for Head of Household.
-     * </p>
-     *
-     * @param state State for which taxes are being calculated
-     * @param filingStatus User's filing status
-     * @return List of tax brackets
-     */
     public static List<StateTaxRule> parseHtml(String state, String filingStatus) {
         String url = "https://www.incometaxpro.net/tax-rates/" + state.toLowerCase() + ".htm";
         List<StateTaxRule> stateRates = new ArrayList<>();
@@ -57,15 +36,6 @@ public class ParseHTML {
         return stateRates;
     }
 
-    /**
-     * <p>
-     *     This method extracts the salary ranges and tax rate for the filing status given.
-     * </p>
-     *
-     * @param filingStatus User's filing status
-     * @param elements Array of data pertaining to filing status. Includes tax rate and salary ranges.
-     * @return List of state's tax brackets
-     */
     private static List<StateTaxRule> extractData(String filingStatus, Elements elements) {
         List<StateTaxRule> stateData = new ArrayList<>();
         Elements data = elements.select("tbody tr");
@@ -86,14 +56,6 @@ public class ParseHTML {
         return stateData;
     }
 
-    /**
-     * <p>
-     *     This method removes non-numeric characters and converts the given value to a double
-     * </p>
-     *
-     * @param element Value to convert to double
-     * @return Converted element
-     */
     private static double parseDouble(Element element) {
         if (element.text().contains("%"))
             return Double.parseDouble(element.text().replace("%", "").strip()) / 100;
