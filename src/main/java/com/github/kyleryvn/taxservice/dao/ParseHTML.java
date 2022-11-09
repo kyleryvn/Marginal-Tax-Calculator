@@ -91,9 +91,9 @@ public class ParseHTML {
 
     /**
      * <p>
-     *     Text
+     *     Converts given parameter into a double.
      * </p>
-     * @param element Value to be converted to double
+     * @param element Value to be converted
      * @return Converted element
      */
     private static double parseDouble(Element element) {
