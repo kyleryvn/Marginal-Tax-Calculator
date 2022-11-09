@@ -26,8 +26,8 @@ import java.util.function.ToDoubleFunction;
  * </p>
  *
  * @author Kyle Schoenhardt
- * @version 1.0.0
- * @since 2022-01-13
+ * @since v1.1.0
+ * @see StateTaxService
  */
 public class FederalTaxService {
 

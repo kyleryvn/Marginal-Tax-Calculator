@@ -18,6 +18,10 @@ import java.util.function.ToDoubleFunction;
  *     taxpayers will pay the lowest tax rate on the first “bracket” or level of taxable income, a higher rate on the
  *     next level, and so on.
  * </p>
+ *
+ * @author Kyle Schoenhardt
+ * @since v1.1.0
+ * @see FederalTaxService
  */
 public class StateTaxService {
     private static Set<String> statesWithoutIncomeTax = new HashSet<>();

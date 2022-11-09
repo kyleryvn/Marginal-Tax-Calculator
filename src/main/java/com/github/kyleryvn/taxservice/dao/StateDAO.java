@@ -16,6 +16,9 @@ import java.util.Set;
  * <p>
  *     This class reads from JSON file and parses the data.
  * </p>
+ *
+ * @author Kyle Schoenhardt
+ * @since v1.1.0
  */
 public class StateDAO {
 

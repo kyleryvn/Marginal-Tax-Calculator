@@ -14,18 +14,20 @@ import java.util.function.Predicate;
 import java.util.stream.Collectors;
 
 /**
- * This class accesses files from the resources folder.
+ * This class accesses files from the internal resources folder.
  */
 public class ResourceUtility {
 
-    public static List<String> getResourceAsList(String filename) {
-        return getResourceAsList(filename, 0);
-    }
-
-    public static List<String> getResourceAsList(String filename, int lineSkip) {
-        return getResourceAsList(filename, lineSkip, e -> e);
-    }
-
+    /**
+     * <p>
+     *     Processes provided file into a specified object.
+     * </p>
+     * @param filename Name of file to be accessed
+     * @param lineSkip Number of lines to skip before reading
+     * @param conversion A {@link Function} to convert file data to an object
+     * @return A {@link List} containing parsed file data mapped to an object. Object is specified in conversion parameter
+     * @param <T> Generic type
+     */
     public static <T> List<T> getResourceAsList(String filename, int lineSkip, Function<String, T> conversion) {
         InputStream inputStream = getFileFromResourceAsStream(filename);
 
@@ -47,22 +49,14 @@ public class ResourceUtility {
         return new ArrayList<>();
     }
 
-    public static Set<String> getResourceAsSet(String filename) {
-        return getResourceAsSet(filename, 0);
-    }
-
-    public static Set<String> getResourceAsSet(String filename, int lineSkip) {
-        return getResourceAsSet(filename, lineSkip, e-> e);
-    }
-
     /**
      * <p>
-     *     //
+     *     Processes provided file into a specified object.
      * </p>
      * @param filename Name of file to be accessed
      * @param lineSkip Number of lines to skip before reading
-     * @param conversion A {@link Function} to convert file data to generic type
-     * @return A {@link Set} containing parsed file data
+     * @param conversion A {@link Function} to convert file data to an object
+     * @return A {@link Set} containing parsed file data mapped to an object. Object is specified in conversion parameter
      * @param <T> Generic type
      */
     public static <T> Set<T> getResourceAsSet(String filename, int lineSkip, Function<String, T> conversion) {

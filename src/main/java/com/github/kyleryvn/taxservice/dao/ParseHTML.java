@@ -18,8 +18,7 @@ import java.util.List;
  * </p>
  *
  * @author Kyle Schoenhardt
- * @since 2022-11-09
- * @version 2.0.0
+ * @since v2.0.0
  */
 public class ParseHTML {
 
