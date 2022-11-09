@@ -55,6 +55,16 @@ public class ResourceUtility {
         return getResourceAsSet(filename, lineSkip, e-> e);
     }
 
+    /**
+     * <p>
+     *     //
+     * </p>
+     * @param filename Name of file to be accessed
+     * @param lineSkip Number of lines to skip before reading
+     * @param conversion A {@link Function} to convert file data to generic type
+     * @return A {@link Set} containing parsed file data
+     * @param <T> Generic type
+     */
     public static <T> Set<T> getResourceAsSet(String filename, int lineSkip, Function<String, T> conversion) {
         InputStream inputStream = getFileFromResourceAsStream(filename);
 
@@ -77,8 +87,14 @@ public class ResourceUtility {
         return new HashSet<>();
     }
 
-    // Get a file from the resources folder
-    // Works everywhere, IDE, unit test, and JAR file.
+    /**
+     * <p>
+     *     This method accesses a file from the resources folder. This method is needed to allow accessibility from
+     *     any environment, such as the IDE, unit tests, and JAR files.
+     * </p>
+     * @param filename Name of file to be accessed
+     * @return {@link InputStream}
+     */
     public static InputStream getFileFromResourceAsStream(String filename) {
         ClassLoader classLoader = ResourceUtility.class.getClassLoader();
         InputStream inputStream = classLoader.getResourceAsStream(filename);
