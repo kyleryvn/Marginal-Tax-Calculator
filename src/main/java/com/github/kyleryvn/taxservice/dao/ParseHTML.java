@@ -10,17 +10,6 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * <h3>Parse HTML</h3>
- * <p>
- *     This class is utilizes the <a href="https://jsoup.org/">Jsoup</a> library to scrape state tax data from the webpage at
- *     <a href="https://www.incometaxpro.net/tax-rates/">incometaxpro.com</a>.
- * </p>
- *
- * @author Kyle Schoenhardt
- * @version 1.1.0
- * @since 2022-11-08
- */
 
 public class ParseHTML {
 
