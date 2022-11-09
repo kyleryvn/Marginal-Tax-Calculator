@@ -20,7 +20,11 @@ public class StateTaxService {
      *     This method calculates the taxpayer's state taxes due.
      * </p>
      * <p>
-     *
+     *      Taxes due are calculated by passing the taxpayer's filing status and gross annual income through a
+     *      {@link java.util.stream.Stream} of {@link StateTaxRule}. The Stream filters through the tax brackets for the
+     *      corresponding filing status. Taxes due are then summed from the corresponding tax brackets by obtaining the
+     *      minimum value between the taxpayer's income, and the maximum value in a tax bracket's salary range, and applying
+     *      the corresponding rate. This process is repeated until all the appropriate tax brackets have been applied.
      * </p>
      * @param state State to calculate taxes for
      * @param filingStatus Taxpayer's filing status
