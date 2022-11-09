@@ -89,7 +89,7 @@ public class ParseHTML {
 
     /**
      * <p>
-     *     This method converts the given value to a double
+     *     This method removes non-numeric characters and converts the given value to a double
      * </p>
      *
      * @param element
