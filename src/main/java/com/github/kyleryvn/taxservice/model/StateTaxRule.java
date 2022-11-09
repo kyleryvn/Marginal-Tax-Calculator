@@ -5,8 +5,9 @@ package com.github.kyleryvn.taxservice.model;
  *     Represents a state tax bracket.
  * </p>
  * <p>
- *     Tax brackets consist of several salary ranges, each with a corresponding tax rate to be applied to that range. For example,
- *     Arizona has 4 tax brackets for each filing status, and
+ *     A tax bracket refers to a range of incomes subject to a certain income tax rate. Tax brackets result in a progressive
+ *     tax system, in which taxation progressively increases as an individual’s income grows. Low incomes fall into tax
+ *     brackets with relatively low income tax rates, while higher earnings fall into brackets with higher rates.
  * </p>
  * @param taxRate Rate for corresponding tax bracket. Will be converted to decimal from percent.
  * @param filingStatus Individual's filing status
