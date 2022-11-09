@@ -41,13 +41,13 @@ public class StateTaxService {
         }
 
         ToDoubleFunction<StateTaxRule> map = taxRule -> {
-            double rangeTwo = Math.min(taxRule.getSalaryRangeTwo(), income);
-            return (rangeTwo - taxRule.getSalaryRangeOne()) * taxRule.getTaxRate();
+            double rangeTwo = Math.min(taxRule.salaryRangeTwo(), income);
+            return (rangeTwo - taxRule.salaryRangeOne()) * taxRule.taxRate();
         };
 
         return stateTaxRules.stream()
-                .filter(taxRule -> taxRule.getFilingStatus().equalsIgnoreCase(filingStatus))
-                .filter(taxRule -> income > taxRule.getSalaryRangeOne())
+                .filter(taxRule -> taxRule.filingStatus().equalsIgnoreCase(filingStatus))
+                .filter(taxRule -> income > taxRule.salaryRangeOne())
                 .mapToDouble(map)
                 //.peek(System.out::println)
                 .sum();
