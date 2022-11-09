@@ -12,7 +12,7 @@ import java.util.function.ToDoubleFunction;
 /**
  * <h3>Federal Tax Service</h3>
  * <p>
- *
+ *      This class calculates the federal tax brackets.
  * </p>
  *
  * @author Kyle Schoenhardt
@@ -21,7 +21,14 @@ import java.util.function.ToDoubleFunction;
  */
 
 public class FederalTaxService {
+    /**
+     * List containing federal tax brackets
+     */
     private static final List<FederalTaxRule> fedTaxRules;
+
+    /**
+     * List containing federal tax brackets for self-employed individuals
+     */
     private static final List<SelfEmployedTaxRule> selfEmployedTaxRules;
 
     static {
@@ -36,6 +43,13 @@ public class FederalTaxService {
         selfEmployedTaxRules = ResourceUtility.getResourceAsList("docs/fedSelfEmployedTaxRules.txt", 0, convertSelfTaxes);
     }
 
+    /**
+     * Calculates federal taxes due by filtering filing status through tax brackets
+     *
+     * @param filingStatus Individual's filing status
+     * @param income Individual's income
+     * @return Federal tax due
+     */
     public static double getFederalTaxDue(String filingStatus, double income) {
         ToDoubleFunction<FederalTaxRule> map = taxRule -> {
             double rangeTwo = Math.min(taxRule.getSalaryRangeTwo(), income);
@@ -49,6 +63,15 @@ public class FederalTaxService {
                 .sum();
     }
 
+    /**
+     *
+     *
+     * @param filingStatus Individual's filing status
+     * @param income Individual's income
+     * @param isChurchEmployee If individual works for a church
+     * @param claimDeduction If user claims deduction
+     * @return Federal self-employment tax due
+     */
     public static double getFederalSelfEmploymentTaxDue(String filingStatus, double income, boolean isChurchEmployee,
                                                         boolean claimDeduction) {
         double taxableIncome = income * 0.9235;
@@ -66,6 +89,13 @@ public class FederalTaxService {
                 .sum();
     }
 
+    /**
+     * Calculates the individual's effective tax rate
+     *
+     * @param totalTaxes Taxes owed
+     * @param income Individual's income
+     * @return Individual's effective tax rate
+     */
     public static double getFederalEffectiveRate(double totalTaxes, double income) {
         return (totalTaxes / income) * 100;
     }
