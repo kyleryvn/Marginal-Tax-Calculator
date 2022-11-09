@@ -10,7 +10,7 @@ package com.github.kyleryvn.taxservice.model;
  *     brackets with relatively low income tax rates, while higher earnings fall into brackets with higher rates.
  * </p>
  * @param taxRate Rate for corresponding tax bracket. Will be converted to decimal from percent.
- * @param filingStatus Individual's filing status
+ * @param filingStatus Taxpayer's filing status
  * @param salaryRangeOne Minimum value of salary range
  * @param salaryRangeTwo Maximum value of salary range
  *

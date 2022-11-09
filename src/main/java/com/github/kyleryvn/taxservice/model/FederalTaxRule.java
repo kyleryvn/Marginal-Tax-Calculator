@@ -10,7 +10,7 @@ package com.github.kyleryvn.taxservice.model;
  *     brackets with relatively low income tax rates, while higher earnings fall into brackets with higher rates.
  * </p>
  * @param taxRate Corresponding tax rate for salary range.
- * @param filingStatus Individual's filing status. Valid entries are "S", "MFJ", "MFS", "HH"
+ * @param filingStatus Taxpayer's filing status. Valid entries are "S", "MFJ", "MFS", "HH"
  * @param salaryRangeOne Minimum value in salary range.
  * @param salaryRangeTwo Maximum value in salary range.
  *

@@ -25,10 +25,10 @@ public class ParseHTML {
 
     /**
      * <p>
-     *     Validates URL for given state and filters data to be parsed by applying individual's filing status.
+     *     Validates URL for given state and filters data to be parsed by applying taxpayer's filing status.
      * </p>
      * @param state The state to get tax brackets from
-     * @param filingStatus The filing status of the individual
+     * @param filingStatus The filing status of the taxpayer
      * @return A {@link  List} containing the {@link StateTaxRule} brackets
      */
     public static List<StateTaxRule> parseHtml(String state, String filingStatus) {
@@ -65,7 +65,7 @@ public class ParseHTML {
      * <p>
      *     Extracts the text values from HTML tags.
      * </p>
-     * @param filingStatus The filing status of the individual
+     * @param filingStatus The filing status of the taxpayer
      * @param elements Array containing various HTML tags
      * @return A {@link List} containing {@link StateTaxRule} objects
      */

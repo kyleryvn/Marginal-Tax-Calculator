@@ -74,8 +74,7 @@ public class ResourceUtility {
         // The stream holding file content
         if (inputStream == null) {
             throw new IllegalArgumentException("ERROR: File cannot be found");
-        }
-        else {
+        } else {
             return inputStream;
         }
     }
