@@ -91,7 +91,7 @@ public class ParseHTML {
 
     /**
      * <p>
-     *     Converts parameter into a double.
+     *     Removes unnecessary characters from string and converts parameter into a double.
      * </p>
      * @param element Value to be converted
      * @return Converted element
