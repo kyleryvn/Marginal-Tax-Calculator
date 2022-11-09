@@ -14,18 +14,30 @@ import java.util.function.ToDoubleFunction;
  *     This class calculates federal taxes due.
  * </p>
  * <p>
- *     Text
+ *     In the United States, the Internal Revenue Service (IRS) uses a progressive tax system, meaning that it uses a
+ *     marginal tax rate, which is the tax rate paid on an additional dollar of income. The marginal tax rate increases
+ *     as a taxpayer’s income increases. There are different tax rates for various levels of income. In other words,
+ *     taxpayers will pay the lowest tax rate on the first “bracket” or level of taxable income, a higher rate on the
+ *     next level, and so on.
  * </p>
+ * <p>
+ *     Tax brackets are adjusted each year for inflation, using the
+ *     <a href="https://www.investopedia.com/terms/c/consumerpriceindex.asp">Consumer Price Index (CPI)</a>.
+ * </p>
+ *
+ * @author Kyle Schoenhardt
+ * @version 1.0.0
+ * @since 2022-01-13
  */
 public class FederalTaxService {
 
     /**
-     * {@link List} containing federal tax brackets
+     * A {@link List} containing federal tax brackets
      */
     private static final List<FederalTaxRule> fedTaxRules;
 
     /**
-     * {@link List} containing federal self-employment tax brackets
+     * A {@link List} containing federal self-employment tax brackets
      */
     private static final List<SelfEmployedTaxRule> selfEmployedTaxRules;
 
