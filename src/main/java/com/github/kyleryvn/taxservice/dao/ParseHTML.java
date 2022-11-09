@@ -29,7 +29,7 @@ public class ParseHTML {
      * </p>
      * @param state The state to get tax brackets from
      * @param filingStatus The filing status of the individual
-     * @return A {@link  List} containing the state's tax brackets
+     * @return A {@link  List} containing the {@link StateTaxRule} brackets
      */
     public static List<StateTaxRule> parseHtml(String state, String filingStatus) {
         // Two word states have '-' in the url instead of a space
@@ -91,7 +91,7 @@ public class ParseHTML {
 
     /**
      * <p>
-     *     Removes unnecessary characters from string and converts parameter into a double.
+     *     Removes unnecessary characters from parameter and converts to double.
      * </p>
      * @param element Value to be converted
      * @return Converted element
