@@ -9,6 +9,17 @@ import java.util.List;
 import java.util.function.Function;
 import java.util.function.ToDoubleFunction;
 
+/**
+ * <h3>Federal Tax Service</h3>
+ * <p>
+ *
+ * </p>
+ *
+ * @author Kyle Schoenhardt
+ * @version 1.1.0
+ * @since 2022-11-08
+ */
+
 public class FederalTaxService {
     private static final List<FederalTaxRule> fedTaxRules;
     private static final List<SelfEmployedTaxRule> selfEmployedTaxRules;
