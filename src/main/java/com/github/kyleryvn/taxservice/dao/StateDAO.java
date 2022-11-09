@@ -9,25 +9,14 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.nio.charset.StandardCharsets;
-import java.util.HashMap;
-import java.util.Map;
+import java.util.HashSet;
+import java.util.Set;
 
-@Deprecated
 public class StateDAO {
-    private final Map<String, String> stateURLS;
 
-    public StateDAO() {
-        this.stateURLS = addStatesToMap();
-    }
-
-    public Map<String, String> getStateURLS() {
-        return stateURLS;
-    }
-
-    private Map<String, String> addStatesToMap() {
-        InputStream inputStream = ResourceUtility.getFileFromResourceAsStream("docs/states.json");
-        Map<String, String> map = new HashMap<>();
-        String key = null;
+    public static Set<String> getStates() {
+        InputStream inputStream = ResourceUtility.getFileFromResourceAsStream("docs/statesWithoutIncomeTax.json");
+        Set<String> statesWithoutIncomeTax = new HashSet<>();
         String value = null;
 
         try (InputStreamReader inputStreamReader = new InputStreamReader(inputStream, StandardCharsets.UTF_8);
@@ -48,7 +37,7 @@ public class StateDAO {
                     } else if (JsonToken.BEGIN_ARRAY.equals(nextToken)) {
                         jsonReader.beginArray();
                     } else if (JsonToken.NAME.equals(nextToken)) {
-                        key = jsonReader.nextName();
+                        jsonReader.nextName();
                         //System.out.println("Token KEY >>>> " + key);
                     } else if (JsonToken.STRING.equals(nextToken)) {
                         value = jsonReader.nextString();
@@ -62,10 +51,10 @@ public class StateDAO {
                         //System.out.println("Token Value >>>> null");
                     }
 
-                    if (key == null || value == null) {
-                        map.remove(key, value);
+                    if (value == null) {
+                        statesWithoutIncomeTax.remove(null);
                     } else {
-                        map.put(key, value);
+                        statesWithoutIncomeTax.add(value);
                     }
                 }
             } catch (IOException e) {
@@ -75,6 +64,6 @@ public class StateDAO {
             e.printStackTrace();
         }
 
-        return map;
+        return statesWithoutIncomeTax;
     }
 }

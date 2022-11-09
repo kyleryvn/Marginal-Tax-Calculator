@@ -13,23 +13,13 @@ import java.util.List;
 
 public class ParseHTML {
 
-    public static List<FederalTaxRule> parseHtml(String filingStatus) {
-        String url = "https://www.investopedia.com/terms/t/taxbracket.asp";
-        List<FederalTaxRule> federalTaxRates = new ArrayList<>();
-        Elements data;
-
-        try {
-            Document document = Jsoup.connect(url).get();
-
-            //
-        } catch (IOException e) {
-            e.printStackTrace();
+    public static List<StateTaxRule> parseHtml(String state, String filingStatus) {
+        // Two word states have '-' in the url instead of a space
+        // Example: new-york.htm
+        if (state.contains(" ")) {
+            state = state.replace(" ", "-");
         }
 
-        return null;
-    }
-
-    public static List<StateTaxRule> parseHtml(String state, String filingStatus) {
         String url = "https://www.incometaxpro.net/tax-rates/" + state.toLowerCase() + ".htm";
         List<StateTaxRule> stateRates = new ArrayList<>();
         Elements data;
