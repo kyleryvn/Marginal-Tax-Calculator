@@ -2,12 +2,9 @@
 Program that calculates an estimate of federal and state taxes due based on an individuals filing status and
 salary/income
 
-### To do
-- [ ] Implement Http GET method to retrieve tax data online 
+### To do 
 - [ ] Add Spring support
   - [ ] Implement Sprint Boot with Thymeleaf
-- [ ] Add Jython support
-  - [ ] Write python script for web scraping purposes (in order to grab tax bracket data)
 
 ### In Progress
 - [ ] Account for self-employment tax
@@ -15,5 +12,6 @@ salary/income
 
 ### Done
 - [x] Added tax brackets for states
+  - [x] Added web scraping support for state tax brackets
 - [x] Added technologies used for project
  
