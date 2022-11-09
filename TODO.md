@@ -12,6 +12,6 @@ salary/income
 
 ### Done
 - [x] Added tax brackets for states
-  - [x] Added web scrapping support for state tax brackets
+  - [x] Added web scraping support for state tax brackets
 - [x] Added technologies used for project
  
