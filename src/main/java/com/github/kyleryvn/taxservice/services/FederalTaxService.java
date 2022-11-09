@@ -41,6 +41,17 @@ public class FederalTaxService {
         selfEmployedTaxRules = ResourceUtility.getResourceAsList("docs/fedSelfEmployedTaxRules.txt", 0, convertSelfTaxes);
     }
 
+    /**
+     * <p>
+     *     Calculates federal taxes due.
+     * </p>
+     * <p>
+     *     kk
+     * </p>
+     * @param filingStatus Taxpayer's filing status
+     * @param income Taxpayer's gross annual income
+     * @return Federal tax due
+     */
     public static double getFederalTaxDue(String filingStatus, double income) {
         ToDoubleFunction<FederalTaxRule> map = taxRule -> {
             double rangeTwo = Math.min(taxRule.salaryRangeTwo(), income);
@@ -54,6 +65,16 @@ public class FederalTaxService {
                 .sum();
     }
 
+    /**
+     * <p>
+     *     yy
+     * </p>
+     * @param filingStatus Taxpayer's filing status
+     * @param income Taxpayer's gross annual income
+     * @param isChurchEmployee
+     * @param claimDeduction
+     * @return Federal self-employed taxes due
+     */
     public static double getFederalSelfEmploymentTaxDue(String filingStatus, double income, boolean isChurchEmployee,
                                                         boolean claimDeduction) {
         double taxableIncome = income * 0.9235;
@@ -71,7 +92,23 @@ public class FederalTaxService {
                 .sum();
     }
 
-    public static double getFederalEffectiveRate(double totalTaxes, double income) {
+    /**
+     * <p>
+     *     Calculates the taxpayer's effective rate.
+     * </p>
+     * <p>
+     *     A taxpayer’s tax bracket does not necessarily reflect the percentage of their income that they will pay in
+     *     taxes; the term for this is the effective tax rate. The term effective tax rate refers to the percent of income
+     *     that an individual or corporation owes/pays in taxes. The effective tax rate for individuals is the average
+     *     rate at which their earned income, such as wages, and unearned income, such as stock dividends, are taxed.
+     *     The effective tax rate for a corporation is the average rate at which its pre-tax profits are taxed, while
+     *     the statutory tax rate is the legal percentage established by law.
+     * </p>
+     * @param totalTaxes Taxpayer's total taxes due
+     * @param income Taxpayer's gross annual income
+     * @return Taxpayer's effective rate
+     */
+    public static double getEffectiveRate(double totalTaxes, double income) {
         return (totalTaxes / income) * 100;
     }
 }
