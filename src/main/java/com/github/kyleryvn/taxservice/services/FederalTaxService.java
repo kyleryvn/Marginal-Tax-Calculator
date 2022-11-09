@@ -57,6 +57,13 @@ public class FederalTaxService {
      * <p>
      *     Calculates federal taxes due.
      * </p>
+     * <p>
+     *     Taxes due are calculated by passing the taxpayer's filing status and gross annual income through a
+     *     {@link java.util.stream.Stream} of {@link FederalTaxRule}. The Stream filters through the tax brackets for the
+     *     corresponding filing status. Taxes due are then summed from the corresponding tax brackets by obtaining the
+     *     minimum value between the taxpayer's income, and the maximum value in a tax bracket's salary range, and applying
+     *     the corresponding rate. This process is repeated until all the appropriate tax brackets have been applied.
+     * </p>
      * @param filingStatus Taxpayer's filing status
      * @param income Taxpayer's gross annual income
      * @return Federal taxes due
@@ -83,6 +90,7 @@ public class FederalTaxService {
      * @param isChurchEmployee If taxpayer is church employee or not
      * @param claimDeduction If taxpayer claimed deduction or not
      * @return Federal self-employment taxes due
+     * @see FederalTaxService#getFederalTaxDue(String, double) getFederalTaxDue()
      */
     public static double getFederalSelfEmploymentTaxDue(String filingStatus, double income, boolean isChurchEmployee,
                                                         boolean claimDeduction) {
