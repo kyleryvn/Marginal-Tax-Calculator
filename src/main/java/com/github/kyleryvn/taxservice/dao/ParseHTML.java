@@ -10,11 +10,19 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-
+/**
+ * <h3>Parse HTML</h3>
+ * <p>
+ *     This class parses HTML data into Java objects
+ * </p>
+ *
+ * @author Kyle Schoenhardt
+ * @version 1.1.0
+ * @since 2022-11-08
+ */
 public class ParseHTML {
 
     /**
-     * <h3>Parse HTML</h3>
      * <p>
      *     Retrieves state's tax data by filtering filing status through the tables provided
      *     on the webpage. Valid filing statuses are "S" for Single, "MFJ" for Married Filing Jointly,
