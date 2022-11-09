@@ -8,11 +8,25 @@ import java.util.*;
 import java.util.function.ToDoubleFunction;
 
 /**
- *
+ * <p>
+ *     kk
+ * </p>
  */
 public class StateTaxService {
     private static Set<String> statesWithoutIncomeTax = new HashSet<>();
 
+    /**
+     * <p>
+     *     This method calculates the taxpayer's state taxes due.
+     * </p>
+     * <p>
+     *
+     * </p>
+     * @param state State to calculate taxes for
+     * @param filingStatus Taxpayer's filing status
+     * @param income Taxpayer's gross annual income
+     * @return Taxpayer's state tax due
+     */
     public static double getStateTaxDue(String state, String filingStatus, double income) {
         List<StateTaxRule> stateTaxRules;
         setStatesWithoutIncomeTax();
@@ -26,7 +40,6 @@ public class StateTaxService {
             stateTaxRules = ParseHTML.parseHtml(state, filingStatus);
 
             return stateTaxRules.stream()
-                    .filter(taxRule -> taxRule.filingStatus().equalsIgnoreCase(filingStatus))
                     .filter(taxRule -> income > taxRule.salaryRangeOne())
                     .mapToDouble(map)
                     .sum();
@@ -68,7 +81,7 @@ public class StateTaxService {
     /**
      * <p>
      *     This method grabs the states that collect no income tax by calling {@link StateDAO#getStates() StateDAO.getStates()}
-     *     and stores result in the {@link Set} {@code statesWithoutIncomeTax}. Alaska, Florida, Nevada, South Dakota, Texas,
+     *     and stores result in the field statesWithoutIncomeTax. Alaska, Florida, Nevada, South Dakota, Texas,
      *     Tennessee, Washington, and Wyoming do not collect income tax.
      * </p>
      */
