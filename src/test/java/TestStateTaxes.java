@@ -25,7 +25,7 @@ public class TestStateTaxes {
     }
 
     @Test
-    @Order(3)
+    @Order(2)
     @DisplayName("Test state tax service")
     void testStateTaxService() {
         String state = "New York";
@@ -34,6 +34,21 @@ public class TestStateTaxes {
         double taxDue = StateTaxService.getStateTaxDue(state, filingStatus, income);
 
         String expected = "$8,213.53";
+        String taxFormatted = NumberFormat.getCurrencyInstance(Locale.US).format(taxDue);
+
+        assertEquals(expected, taxFormatted);
+    }
+
+    @Test
+    @Order(2)
+    @DisplayName("Test state tax service, no income tax")
+    void testStateTaxServiceNoIncomeTax() {
+        String state = "Florida";
+        String filingStatus = "S";
+        double income = 140_000;
+        double taxDue = StateTaxService.getStateTaxDue(state, filingStatus, income);
+
+        String expected = "$0.00";
         String taxFormatted = NumberFormat.getCurrencyInstance(Locale.US).format(taxDue);
 
         assertEquals(expected, taxFormatted);
