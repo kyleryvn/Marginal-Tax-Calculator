@@ -45,7 +45,7 @@ public class ParseHTML {
         try {
             Document document = Jsoup.connect(url).get();
 
-            data = switch (filingStatus) {
+            data = switch (filingStatus.toUpperCase()) {
                 case "S" -> document.select("table.statebrackets:first-of-type");
                 case "MFJ" -> document.select("table.statebrackets:nth-of-type(2)");
                 case "MFS" -> document.select("table.statebrackets:nth-of-type(3)");
