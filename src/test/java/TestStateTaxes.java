@@ -6,57 +6,36 @@ import org.junit.jupiter.api.Test;
 
 import java.text.NumberFormat;
 import java.util.Locale;
-import java.util.Map;
+import java.util.Set;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 @DisplayName("Test: State Data")
 public class TestStateTaxes {
 
     @Test
     @Order(1)
-    @DisplayName("Test getting data from HashMap")
-    void t1() {
-        Map<String, String> map = new StateDAO().getStateURLS();
+    @DisplayName("Test getting data from HashSet")
+    void testGettingStatesWithoutIncomeTax() {
+        Set<String> set = StateDAO.getStates();
 
-        for (Map.Entry<String, String> entry : map.entrySet()) {
-            System.out.println(entry);
+        for (String s : set) {
+            System.out.println(s);
         }
     }
 
     @Test
-    @DisplayName("Test Arizona")
-    void testArizona() {
-        double salary = 450_000;
-        double taxDue = StateTaxService.getStateTaxDue("AZ", "S", salary);
-        String finalDue = NumberFormat.getCurrencyInstance(new Locale("en", "US")).format(taxDue);
-        System.out.println("Tax due: " + finalDue);
-    }
-
-    @Test
-    @DisplayName("Test Arkansas")
-    void testArkansas() {
-        double salary = 90_000;
+    @Order(3)
+    @DisplayName("Test state tax service")
+    void testStateTaxService() {
+        String state = "New York";
         String filingStatus = "S";
-        double taxDue = StateTaxService.getStateTaxDue("AR", filingStatus, salary);
-        String taxFormatted = NumberFormat.getCurrencyInstance(Locale.US).format(taxDue);
-        System.out.println("Tax due: " + taxFormatted);
-    }
+        double income = 140_000;
+        double taxDue = StateTaxService.getStateTaxDue(state, filingStatus, income);
 
-    @Test
-    @DisplayName("Test New Hampshire")
-    void testNewHampshire() {
-        double salary = 145_942;
-        String filingStatus = "S";
-        double taxDue = StateTaxService.getStateTaxDue("NH", filingStatus, salary); // NH taxes 5% on interest and dividends only
+        String expected = "$8,213.53";
         String taxFormatted = NumberFormat.getCurrencyInstance(Locale.US).format(taxDue);
-        System.out.println("Tax due: " + taxFormatted);
-    }
 
-    @Test
-    @DisplayName("Test Florida")
-    void testFlorida() {
-        double salary = 20_914; // taxable income
-        double taxDue = StateTaxService.getStateTaxDue("NY", "S", salary);
-        String taxFormatted = NumberFormat.getCurrencyInstance(Locale.US).format(taxDue);
-        System.out.println("Tax due: " + taxFormatted);
+        assertEquals(expected, taxFormatted);
     }
 }
