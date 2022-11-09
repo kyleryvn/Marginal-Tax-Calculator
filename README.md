@@ -14,6 +14,7 @@ Project is created with:
 
 [![Java](https://img.shields.io/badge/java-jdk%2017-007396?logo=java&style=for-the-badge)](https://jdk.java.net/17/)
 [![Maven](https://img.shields.io/badge/maven-3.8.4-C71A36?logo=apache%20maven&style=for-the-badge)](https://maven.apache.org/)
+[![Jsoup](https://img.shields.io/badge/jsoup-1.15.3-27527F?logo=java&style=for-the-badge)](https://jsoup.org/)
 [![Gson](https://img.shields.io/badge/gson-2.9.0-4285F4?logo=google&style=for-the-badge&logoColor=white)](https://github.com/google/gson)
 [![JUnit](https://img.shields.io/badge/junit-5.8.2-25A162?logo=junit5&style=for-the-badge&logoColor=white)](https://junit.org/junit5/)
 

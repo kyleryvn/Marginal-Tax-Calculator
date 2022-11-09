@@ -6,27 +6,32 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 import java.util.function.Function;
 import java.util.function.Predicate;
 import java.util.stream.Collectors;
 
+/**
+ * <p>
+ *     This class handles accessing and reading files from the resources folder.
+ * </p>
+ *
+ * @author Kyle Schoenhardt
+ * @since v1.1.0
+ */
 public class ResourceUtility {
 
-    public static List<String> getResourceAsList(String filename) {
-        return getResourceAsList(filename, 0);
-    }
-
-    public static List<String> getResourceAsList(String filename, int lineSkip) {
-        return getResourceAsList(filename, lineSkip, e -> e);
-    }
-
     /**
-     * @param filename Name of file to be used
-     * @param lineSkip Amount of lines to skip in file
-     * @param conversion Convert file to specific object
+     * <p>
+     *     Processes provided file into a specified object.
+     * </p>
+     * @param filename Name of file to be accessed
+     * @param lineSkip Number of lines to skip before reading
+     * @param conversion A {@link Function} to convert file data to an object
+     * @return A {@link List} containing parsed file data mapped to an object. Object is specified in conversion parameter
      * @param <T> Generic type
-     * @return ArrayList
      */
     public static <T> List<T> getResourceAsList(String filename, int lineSkip, Function<String, T> conversion) {
         InputStream inputStream = getFileFromResourceAsStream(filename);
@@ -49,8 +54,46 @@ public class ResourceUtility {
         return new ArrayList<>();
     }
 
-    // Get a file from the resources folder
-    // Works everywhere, IDE, unit test, and JAR file.
+    /**
+     * <p>
+     *     Processes provided file into a specified object.
+     * </p>
+     * @param filename Name of file to be accessed
+     * @param lineSkip Number of lines to skip before reading
+     * @param conversion A {@link Function} to convert file data to an object
+     * @return A {@link Set} containing parsed file data mapped to an object. Object is specified in conversion parameter
+     * @param <T> Generic type
+     */
+    public static <T> Set<T> getResourceAsSet(String filename, int lineSkip, Function<String, T> conversion) {
+        InputStream inputStream = getFileFromResourceAsStream(filename);
+
+        // Change predicate to filter for specific criteria
+        Predicate<? super String> predicate = p -> true;
+
+        try (InputStreamReader inputStreamReader = new InputStreamReader(inputStream, StandardCharsets.UTF_8);
+             BufferedReader bufferedReader = new BufferedReader(inputStreamReader)) {
+
+            return bufferedReader.lines()
+                    .skip(lineSkip)
+                    //.filter(predicate)
+                    .map(conversion)
+                    .collect(Collectors.toSet());
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        return new HashSet<>();
+    }
+
+    /**
+     * <p>
+     *     This method accesses a file from the resources folder. This method is needed to allow accessibility from
+     *     any environment, such as the IDE, unit tests, and JAR files.
+     * </p>
+     * @param filename Name of file to be accessed
+     * @return {@link InputStream}
+     */
     public static InputStream getFileFromResourceAsStream(String filename) {
         ClassLoader classLoader = ResourceUtility.class.getClassLoader();
         InputStream inputStream = classLoader.getResourceAsStream(filename);
@@ -58,8 +101,7 @@ public class ResourceUtility {
         // The stream holding file content
         if (inputStream == null) {
             throw new IllegalArgumentException("ERROR: File cannot be found");
-        }
-        else {
+        } else {
             return inputStream;
         }
     }

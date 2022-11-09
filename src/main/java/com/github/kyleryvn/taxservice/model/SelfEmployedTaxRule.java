@@ -1,39 +1,32 @@
 package com.github.kyleryvn.taxservice.model;
 
-public class SelfEmployedTaxRule {
-    private final boolean isChurchEmployee;
-    private final String filingStatus;
-    private final double taxRate;
-    private final double salaryRangeOne;
-    private final double salaryRangeTwo;
-
-    public SelfEmployedTaxRule(boolean isChurchEmployee, String filingStatus, double taxRate, double salaryRangeOne, double salaryRangeTwo) {
-        this.isChurchEmployee = isChurchEmployee;
-        this.filingStatus = filingStatus;
-        this.taxRate = taxRate;
-        this.salaryRangeOne = salaryRangeOne;
-        this.salaryRangeTwo = salaryRangeTwo;
-    }
-
-    public boolean isChurchEmployee() {
-        return isChurchEmployee;
-    }
-
-    public String getFilingStatus() {
-        return filingStatus;
-    }
-
-    public double getTaxRate() {
-        return taxRate;
-    }
-
-    public double getSalaryRangeOne() {
-        return salaryRangeOne;
-    }
-
-    public double getSalaryRangeTwo() {
-        return salaryRangeTwo;
-    }
+/**
+ * <p>
+ *     Represents a federal self-employed tax bracket.
+ * </p>
+ * <p>
+ *     A self-employed person does not work for a specific employer who pays them a consistent salary or wage.
+ *     Self-employed individuals, or independent contractors, earn income by contracting with a trade or business directly.
+ * </p>
+ * <p>
+ *     The term self-employment tax refers to taxes self-employed individuals and small business owners pay to the
+ *     federal government to fund Medicare and Social Security. This tax is due when an individual has net earnings of $400
+ *     or more in self-employment income over the course of the tax year or $108.28 or more from a tax-exempt church.
+ *     Individuals who make less than these thresholds from self-employment don’t have to pay any tax.
+ * </p>
+ * @param isChurchEmployee If taxpayer is a church employee.
+ * @param filingStatus Taxpayer's filing status.
+ * @param taxRate Corresponding tax rate for salary range.
+ * @param salaryRangeOne Minimum value in salary range.
+ * @param salaryRangeTwo Maximum value in salary range.
+ *
+ * @author Kyle Schoenhardt
+ * @since v1.1.0
+ * @see FederalTaxRule
+ * @see StateTaxRule
+ */
+public record SelfEmployedTaxRule(boolean isChurchEmployee, String filingStatus, double taxRate, double salaryRangeOne,
+                                  double salaryRangeTwo) {
 
     @Override
     public String toString() {

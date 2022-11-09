@@ -9,24 +9,29 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.nio.charset.StandardCharsets;
-import java.util.HashMap;
-import java.util.Map;
+import java.util.HashSet;
+import java.util.Set;
 
+/**
+ * <p>
+ *     This class reads from JSON file and parses the data.
+ * </p>
+ *
+ * @author Kyle Schoenhardt
+ * @since v1.1.0
+ */
 public class StateDAO {
-    private final Map<String, String> stateURLS;
 
-    public StateDAO() {
-        this.stateURLS = addStatesToMap();
-    }
-
-    public Map<String, String> getStateURLS() {
-        return stateURLS;
-    }
-
-    private Map<String, String> addStatesToMap() {
-        InputStream inputStream = ResourceUtility.getFileFromResourceAsStream("docs/states.json");
-        Map<String, String> map = new HashMap<>();
-        String key = null;
+    /**
+     * <p>
+     *     This method utilizes Google's {@link com.google.gson.Gson} library to read JSON file containing an array of
+     *     states that do not collect income tax, and parses data into {@link String} objects.
+     * </p>
+     * @return A {@link Set} containing state abbreviations
+     */
+    public static Set<String> getStates() {
+        InputStream inputStream = ResourceUtility.getFileFromResourceAsStream("docs/statesWithoutIncomeTax.json");
+        Set<String> statesWithoutIncomeTax = new HashSet<>();
         String value = null;
 
         try (InputStreamReader inputStreamReader = new InputStreamReader(inputStream, StandardCharsets.UTF_8);
@@ -47,7 +52,7 @@ public class StateDAO {
                     } else if (JsonToken.BEGIN_ARRAY.equals(nextToken)) {
                         jsonReader.beginArray();
                     } else if (JsonToken.NAME.equals(nextToken)) {
-                        key = jsonReader.nextName();
+                        jsonReader.nextName();
                         //System.out.println("Token KEY >>>> " + key);
                     } else if (JsonToken.STRING.equals(nextToken)) {
                         value = jsonReader.nextString();
@@ -61,10 +66,8 @@ public class StateDAO {
                         //System.out.println("Token Value >>>> null");
                     }
 
-                    if (key == null || value == null) {
-                        map.remove(key, value);
-                    } else {
-                        map.put(key, value);
+                    if (value != null) {
+                        statesWithoutIncomeTax.add(value);
                     }
                 }
             } catch (IOException e) {
@@ -74,6 +77,6 @@ public class StateDAO {
             e.printStackTrace();
         }
 
-        return map;
+        return statesWithoutIncomeTax;
     }
 }
