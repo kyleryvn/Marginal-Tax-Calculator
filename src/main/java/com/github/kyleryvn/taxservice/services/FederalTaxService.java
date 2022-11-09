@@ -50,7 +50,7 @@ public class FederalTaxService {
      * </p>
      * @param filingStatus Taxpayer's filing status
      * @param income Taxpayer's gross annual income
-     * @return Federal tax due
+     * @return Federal taxes due
      */
     public static double getFederalTaxDue(String filingStatus, double income) {
         ToDoubleFunction<FederalTaxRule> map = taxRule -> {
@@ -71,9 +71,9 @@ public class FederalTaxService {
      * </p>
      * @param filingStatus Taxpayer's filing status
      * @param income Taxpayer's gross annual income
-     * @param isChurchEmployee
-     * @param claimDeduction
-     * @return Federal self-employed taxes due
+     * @param isChurchEmployee If taxpayer is church employee or not
+     * @param claimDeduction If taxpayer claimed deduction or not
+     * @return Federal self-employment taxes due
      */
     public static double getFederalSelfEmploymentTaxDue(String filingStatus, double income, boolean isChurchEmployee,
                                                         boolean claimDeduction) {
