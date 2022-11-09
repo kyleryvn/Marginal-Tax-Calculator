@@ -13,6 +13,10 @@ package com.github.kyleryvn.taxservice.model;
  * @param filingStatus Individual's filing status
  * @param salaryRangeOne Minimum value of salary range
  * @param salaryRangeTwo Maximum value of salary range
+ *
+ * @author Kyle Schoenhardt
+ * @version 2.0.0
+ * @since 2022-11-08
  */
 public record StateTaxRule(double taxRate, String filingStatus, double salaryRangeOne, double salaryRangeTwo) {
 

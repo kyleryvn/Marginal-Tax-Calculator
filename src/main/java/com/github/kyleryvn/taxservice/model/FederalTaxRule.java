@@ -2,7 +2,7 @@ package com.github.kyleryvn.taxservice.model;
 
 /**
  * <p>
- *     This record holds the blueprint for a federal tax bracket.
+ *     Represents a federal tax bracket.
  * </p>
  * <p>
  *     A tax bracket refers to a range of incomes subject to a certain income tax rate. Tax brackets result in a progressive
