@@ -91,8 +91,8 @@ public class ParseHTML {
      *     This method removes non-numeric characters and converts the given value to a double
      * </p>
      *
-     * @param element Element to convert to double
-     * @return Parsed element
+     * @param element Value to convert to double
+     * @return Converted element
      */
     private static double parseDouble(Element element) {
         if (element.text().contains("%"))
