@@ -44,7 +44,8 @@ public class FederalTaxService {
     }
 
     /**
-     * Calculates federal taxes due by filtering filing status through tax brackets
+     * Calculates federal taxes due by utilizing Stream library to filter filing status through tax brackets and
+     * applying corresponding rate.
      *
      * @param filingStatus Individual's filing status
      * @param income Individual's income
@@ -64,7 +65,8 @@ public class FederalTaxService {
     }
 
     /**
-     *
+     * Calculates federal self-employed taxes due by utilizing Stream library to filter filing status through tax brackets and
+     * applying corresponding rate.
      *
      * @param filingStatus Individual's filing status
      * @param income Individual's income
