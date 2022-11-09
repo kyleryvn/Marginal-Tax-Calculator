@@ -12,8 +12,20 @@ import java.nio.charset.StandardCharsets;
 import java.util.HashSet;
 import java.util.Set;
 
+/**
+ * <p>
+ *     This class reads from JSON file and parses the data.
+ * </p>
+ */
 public class StateDAO {
 
+    /**
+     * <p>
+     *     This method utilizes Google's {@link com.google.gson.Gson} library to read JSON file containing an array of
+     *     states that do not collect income tax, and parses data into {@link String} objects.
+     * </p>
+     * @return {@link Set} containing state abbreviations
+     */
     public static Set<String> getStates() {
         InputStream inputStream = ResourceUtility.getFileFromResourceAsStream("docs/statesWithoutIncomeTax.json");
         Set<String> statesWithoutIncomeTax = new HashSet<>();
@@ -51,9 +63,7 @@ public class StateDAO {
                         //System.out.println("Token Value >>>> null");
                     }
 
-                    if (value == null) {
-                        statesWithoutIncomeTax.remove(null);
-                    } else {
+                    if (value != null) {
                         statesWithoutIncomeTax.add(value);
                     }
                 }
