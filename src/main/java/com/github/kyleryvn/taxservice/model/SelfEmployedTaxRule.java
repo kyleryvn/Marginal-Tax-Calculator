@@ -2,7 +2,7 @@ package com.github.kyleryvn.taxservice.model;
 
 /**
  * <p>
- *     Represents a federal sel-employed tax bracket.
+ *     Represents a federal self-employed tax bracket.
  * </p>
  * <p>
  *     A self-employed person does not work for a specific employer who pays them a consistent salary or wage.
