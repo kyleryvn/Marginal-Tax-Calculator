@@ -91,7 +91,7 @@ public class ParseHTML {
      *     This method removes non-numeric characters and converts the given value to a double
      * </p>
      *
-     * @param element
+     * @param element Element to convert to double
      * @return Parsed element
      */
     private static double parseDouble(Element element) {
