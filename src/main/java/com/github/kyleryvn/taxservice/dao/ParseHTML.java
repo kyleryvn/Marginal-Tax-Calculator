@@ -10,8 +10,27 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * <h3>Parse HTML</h3>
+ * <p>
+ *     This class is used to scrape state tax data from the predetermined webpage at
+ *     <a href="https://www.incometaxpro.net/tax-rates/">incometaxpro.com</a>. This class
+ *     utilizes the Jsoup library to accomplish this.
+ * </p>
+ */
+
 public class ParseHTML {
 
+    /**
+     * <p>
+     *     This method
+     * </p>
+     *
+     * @param state State for which taxes are being calculated. Method grabs specific table
+     *              from website, and parses the tax data for provided filing status
+     * @param filingStatus User's filing status
+     * @return List of tax brackets
+     */
     public static List<StateTaxRule> parseHtml(String state, String filingStatus) {
         String url = "https://www.incometaxpro.net/tax-rates/" + state.toLowerCase() + ".htm";
         List<StateTaxRule> stateRates = new ArrayList<>();
