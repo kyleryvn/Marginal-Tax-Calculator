@@ -29,7 +29,7 @@ public class ParseHTML {
      * </p>
      * @param state The state to get tax brackets from
      * @param filingStatus The filing status of the individual
-     * @return A {@code List} containing the state's tax brackets
+     * @return A {@link  List} containing the state's tax brackets
      */
     public static List<StateTaxRule> parseHtml(String state, String filingStatus) {
         // Two word states have '-' in the url instead of a space
@@ -67,7 +67,7 @@ public class ParseHTML {
      * </p>
      * @param filingStatus The filing status of the individual
      * @param elements Array containing various HTML tags
-     * @return A {@code List} containing {@link StateTaxRule} objects
+     * @return A {@link  List} containing {@link StateTaxRule} objects
      */
     private static List<StateTaxRule> extractData(String filingStatus, Elements elements) {
         List<StateTaxRule> stateData = new ArrayList<>();
