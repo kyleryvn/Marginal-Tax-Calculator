@@ -19,6 +19,10 @@ package com.github.kyleryvn.taxservice.model;
  * @param taxRate Corresponding tax rate for salary range.
  * @param salaryRangeOne Minimum value in salary range.
  * @param salaryRangeTwo Maximum value in salary range.
+ *
+ * @author Kyle Schoenhardt
+ * @version 1.0.0
+ * @since 2022-01-12
  */
 public record SelfEmployedTaxRule(boolean isChurchEmployee, String filingStatus, double taxRate, double salaryRangeOne,
                                   double salaryRangeTwo) {
