@@ -1,28 +1,9 @@
 package com.github.kyleryvn.taxservice.model;
 
-/**
- *
- */
 public class StateTaxRule {
-
-    /**
-     * The tax rate for a specific salary range
-     */
     private final double taxRate;
-
-    /**
-     * Individual's filing status. Should be one of "S", "MFJ", "MFS", "HH"
-     */
     private final String filingStatus;
-
-    /**
-     * Minimum value of salary range
-     */
     private final double salaryRangeOne;
-
-    /**
-     * Maximum value of salary range
-     */
     private final double salaryRangeTwo;
 
     public StateTaxRule() {
