@@ -100,6 +100,6 @@ public class ParseHTML {
         if (element.text().contains("%"))
             return Double.parseDouble(element.text().replace("%", "").strip()) / 100;
 
-        return Double.parseDouble(element.text().replaceAll("[,|$]", "").strip());
+        return Double.parseDouble(element.text().replaceAll("[$,]", "").strip());
     }
 }
