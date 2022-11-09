@@ -18,7 +18,7 @@ import java.util.List;
  * </p>
  *
  * @author Kyle Schoenhardt
- * @version 1.0.0
+ * @version 1.1.0
  * @since 2022-11-08
  */
 
@@ -26,8 +26,9 @@ public class ParseHTML {
 
     /**
      * <p>
-     *     This method retrieves the state's tax data by filtering through the tables provided
-     *     on the webpage by using user's filing status.
+     *     Retrieves state's tax data by filtering filing status through the tables provided
+     *     on the webpage. Valid filing statuses are "S" for Single, "MFJ" for Married Filing Jointly,
+     *     "MFS" for Married Filing Separately, or "HH" for Head of Household.
      * </p>
      *
      * @param state State for which taxes are being calculated
