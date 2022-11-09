@@ -12,6 +12,7 @@ import java.nio.charset.StandardCharsets;
 import java.util.HashMap;
 import java.util.Map;
 
+@Deprecated
 public class StateDAO {
     private final Map<String, String> stateURLS;
 
