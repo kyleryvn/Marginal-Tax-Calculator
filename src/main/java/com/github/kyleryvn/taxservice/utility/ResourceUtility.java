@@ -13,6 +13,9 @@ import java.util.function.Function;
 import java.util.function.Predicate;
 import java.util.stream.Collectors;
 
+/**
+ * This class accesses files from the resources folder.
+ */
 public class ResourceUtility {
 
     public static List<String> getResourceAsList(String filename) {
@@ -44,6 +47,14 @@ public class ResourceUtility {
         return new ArrayList<>();
     }
 
+    public static Set<String> getResourceAsSet(String filename) {
+        return getResourceAsSet(filename, 0);
+    }
+
+    public static Set<String> getResourceAsSet(String filename, int lineSkip) {
+        return getResourceAsSet(filename, lineSkip, e-> e);
+    }
+
     public static <T> Set<T> getResourceAsSet(String filename, int lineSkip, Function<String, T> conversion) {
         InputStream inputStream = getFileFromResourceAsStream(filename);
 
@@ -55,6 +66,7 @@ public class ResourceUtility {
 
             return bufferedReader.lines()
                     .skip(lineSkip)
+                    //.filter(predicate)
                     .map(conversion)
                     .collect(Collectors.toSet());
 
