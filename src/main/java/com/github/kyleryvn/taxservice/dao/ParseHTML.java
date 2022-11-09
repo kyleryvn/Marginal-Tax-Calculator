@@ -13,21 +13,24 @@ import java.util.List;
 /**
  * <h3>Parse HTML</h3>
  * <p>
- *     This class is used to scrape state tax data from the predetermined webpage at
- *     <a href="https://www.incometaxpro.net/tax-rates/">incometaxpro.com</a>. This class
- *     utilizes the Jsoup library to accomplish this.
+ *     This class is utilizes the <a href="https://jsoup.org/">Jsoup</a> library to scrape state tax data from the webpage at
+ *     <a href="https://www.incometaxpro.net/tax-rates/">incometaxpro.com</a>.
  * </p>
+ *
+ * @author Kyle Schoenhardt
+ * @version 1.0.0
+ * @since 2022-11-08
  */
 
 public class ParseHTML {
 
     /**
      * <p>
-     *     This method
+     *     This method retrieves the state's tax data by filtering through the tables provided
+     *     on the webpage by using user's filing status.
      * </p>
      *
-     * @param state State for which taxes are being calculated. Method grabs specific table
-     *              from website, and parses the tax data for provided filing status
+     * @param state State for which taxes are being calculated
      * @param filingStatus User's filing status
      * @return List of tax brackets
      */
@@ -55,6 +58,15 @@ public class ParseHTML {
         return stateRates;
     }
 
+    /**
+     * <p>
+     *     This method extracts the salary ranges and tax rate for the filing status given.
+     * </p>
+     *
+     * @param filingStatus User's filing status
+     * @param elements Array of data pertaining to filing status
+     * @return List of state's tax brackets
+     */
     private static List<StateTaxRule> extractData(String filingStatus, Elements elements) {
         List<StateTaxRule> stateData = new ArrayList<>();
         Elements data = elements.select("tbody tr");
@@ -75,6 +87,14 @@ public class ParseHTML {
         return stateData;
     }
 
+    /**
+     * <p>
+     *     This method converts the given value to a double
+     * </p>
+     *
+     * @param element
+     * @return Parsed element
+     */
     private static double parseDouble(Element element) {
         if (element.text().contains("%"))
             return Double.parseDouble(element.text().replace("%", "").strip()) / 100;
