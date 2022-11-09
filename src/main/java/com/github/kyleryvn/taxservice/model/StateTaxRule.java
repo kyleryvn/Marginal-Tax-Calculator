@@ -15,8 +15,9 @@ package com.github.kyleryvn.taxservice.model;
  * @param salaryRangeTwo Maximum value of salary range
  *
  * @author Kyle Schoenhardt
- * @version 2.0.0
- * @since 2022-11-08
+ * @since v1.1.0
+ * @see FederalTaxRule
+ * @see SelfEmployedTaxRule
  */
 public record StateTaxRule(double taxRate, String filingStatus, double salaryRangeOne, double salaryRangeTwo) {
 
