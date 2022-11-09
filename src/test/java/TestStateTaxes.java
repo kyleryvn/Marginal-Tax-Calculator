@@ -29,7 +29,7 @@ public class TestStateTaxes {
     @DisplayName("Test state tax service")
     void testStateTaxService() {
         String state = "New York";
-        String filingStatus = "S";
+        String filingStatus = "s";
         double income = 140_000;
         double taxDue = StateTaxService.getStateTaxDue(state, filingStatus, income);
 
@@ -44,7 +44,7 @@ public class TestStateTaxes {
     @DisplayName("Test state tax service, no income tax")
     void testStateTaxServiceNoIncomeTax() {
         String state = "Florida";
-        String filingStatus = "S";
+        String filingStatus = "HH";
         double income = 140_000;
         double taxDue = StateTaxService.getStateTaxDue(state, filingStatus, income);
 

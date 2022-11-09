@@ -1,4 +1,4 @@
-import com.github.kyleryvn.taxservice.dao.HTMLParser;
+import com.github.kyleryvn.taxservice.dao.ParseHTML;
 import com.github.kyleryvn.taxservice.model.StateTaxRule;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
 import java.util.List;
 
 @DisplayName("Parse HTML Test")
-public class TestHTMLParser {
+public class TestParseHTML {
 
     @Test
     void testParseHTML() {
@@ -14,7 +14,7 @@ public class TestHTMLParser {
         String state = "Arizona";
         List<StateTaxRule> taxRules;
 
-        taxRules = HTMLParser.parseHtml(state, filingStatus);
+        taxRules = ParseHTML.parseHtml(state, filingStatus);
         for (StateTaxRule taxRule : taxRules) {
             System.out.println(taxRule);
         }
