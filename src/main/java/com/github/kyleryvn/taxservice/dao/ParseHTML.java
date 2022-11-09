@@ -65,7 +65,7 @@ public class ParseHTML {
      * </p>
      *
      * @param filingStatus User's filing status
-     * @param elements Array of data pertaining to filing status
+     * @param elements Array of data pertaining to filing status. Includes tax rate and salary ranges.
      * @return List of state's tax brackets
      */
     private static List<StateTaxRule> extractData(String filingStatus, Elements elements) {
