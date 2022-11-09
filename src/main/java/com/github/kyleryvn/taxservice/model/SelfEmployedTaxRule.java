@@ -10,7 +10,7 @@ package com.github.kyleryvn.taxservice.model;
  *     or more in self-employment income over the course of the tax year or $108.28 or more from a tax-exempt church.
  *     Individuals who make less than these thresholds from self-employment don’t have to pay any tax.
  * </p>
- * @param isChurchEmployee If individual works for a church.
+ * @param isChurchEmployee If individual is a church employee.
  * @param filingStatus Individual's filing status.
  * @param taxRate Corresponding tax rate for salary range.
  * @param salaryRangeOne Minimum value in salary range.
