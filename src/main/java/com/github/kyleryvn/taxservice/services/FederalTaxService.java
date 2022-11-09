@@ -9,8 +9,24 @@ import java.util.List;
 import java.util.function.Function;
 import java.util.function.ToDoubleFunction;
 
+/**
+ * <p>
+ *     This class calculates federal taxes due.
+ * </p>
+ * <p>
+ *     Text
+ * </p>
+ */
 public class FederalTaxService {
+
+    /**
+     * {@link List} containing federal tax brackets
+     */
     private static final List<FederalTaxRule> fedTaxRules;
+
+    /**
+     * {@link List} containing federal self-employment tax brackets
+     */
     private static final List<SelfEmployedTaxRule> selfEmployedTaxRules;
 
     static {
