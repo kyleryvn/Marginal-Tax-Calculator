@@ -10,8 +10,27 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * <h3>HTML Parser</h3>
+ * <p>
+ *     This class parses HTML data from a given <a href="https://www.incometaxpro.net/tax-rates/">website</a> into
+ *     a {@link StateTaxRule} object.
+ * </p>
+ *
+ * @author Kyle Schoenhardt
+ * @since 2022-11-09
+ * @version 2.0.0
+ */
 public class ParseHTML {
 
+    /**
+     * <p>
+     *     Validates URL for given state and filters data to be parsed by applying individual's filing status.
+     * </p>
+     * @param state The state to get tax brackets from
+     * @param filingStatus The filing status of the individual
+     * @return A {@code List} containing the state's tax brackets
+     */
     public static List<StateTaxRule> parseHtml(String state, String filingStatus) {
         // Two word states have '-' in the url instead of a space
         // Example: new-york.htm
@@ -42,6 +61,14 @@ public class ParseHTML {
         return stateRates;
     }
 
+    /**
+     * <p>
+     *     Extracts the text values from HTML tags.
+     * </p>
+     * @param filingStatus The filing status of the individual
+     * @param elements Array containing various HTML tags
+     * @return A {@code List} containing {@link StateTaxRule} objects
+     */
     private static List<StateTaxRule> extractData(String filingStatus, Elements elements) {
         List<StateTaxRule> stateData = new ArrayList<>();
         Elements data = elements.select("tbody tr");
@@ -62,6 +89,13 @@ public class ParseHTML {
         return stateData;
     }
 
+    /**
+     * <p>
+     *     Text
+     * </p>
+     * @param element Value to be converted to double
+     * @return Converted element
+     */
     private static double parseDouble(Element element) {
         if (element.text().contains("%"))
             return Double.parseDouble(element.text().replace("%", "").strip()) / 100;
