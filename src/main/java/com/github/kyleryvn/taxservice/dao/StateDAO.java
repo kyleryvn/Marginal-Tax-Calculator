@@ -24,7 +24,7 @@ public class StateDAO {
      *     This method utilizes Google's {@link com.google.gson.Gson} library to read JSON file containing an array of
      *     states that do not collect income tax, and parses data into {@link String} objects.
      * </p>
-     * @return {@link Set} containing state abbreviations
+     * @return A {@link Set} containing state abbreviations
      */
     public static Set<String> getStates() {
         InputStream inputStream = ResourceUtility.getFileFromResourceAsStream("docs/statesWithoutIncomeTax.json");
