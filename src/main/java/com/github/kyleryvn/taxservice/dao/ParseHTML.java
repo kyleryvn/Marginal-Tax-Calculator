@@ -1,6 +1,5 @@
 package com.github.kyleryvn.taxservice.dao;
 
-import com.github.kyleryvn.taxservice.model.FederalTaxRule;
 import com.github.kyleryvn.taxservice.model.StateTaxRule;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
