@@ -14,7 +14,12 @@ import java.util.function.Predicate;
 import java.util.stream.Collectors;
 
 /**
- * This class accesses files from the internal resources folder.
+ * <p>
+ *     This class handles accessing and reading files from the resources folder.
+ * </p>
+ *
+ * @author Kyle Schoenhardt
+ * @since v1.1.0
  */
 public class ResourceUtility {
 
