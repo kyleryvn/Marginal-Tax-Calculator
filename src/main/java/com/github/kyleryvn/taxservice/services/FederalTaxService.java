@@ -57,9 +57,6 @@ public class FederalTaxService {
      * <p>
      *     Calculates federal taxes due.
      * </p>
-     * <p>
-     *     kk
-     * </p>
      * @param filingStatus Taxpayer's filing status
      * @param income Taxpayer's gross annual income
      * @return Federal taxes due
@@ -79,7 +76,7 @@ public class FederalTaxService {
 
     /**
      * <p>
-     *     yy
+     *     Calculates federal self-employment taxes due.
      * </p>
      * @param filingStatus Taxpayer's filing status
      * @param income Taxpayer's gross annual income
