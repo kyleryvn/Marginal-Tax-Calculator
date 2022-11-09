@@ -9,7 +9,14 @@ import java.util.function.ToDoubleFunction;
 
 /**
  * <p>
- *     kk
+ *     This class calculates state taxes due.
+ * </p>
+ * <p>
+ *     In the United States, the Internal Revenue Service (IRS) uses a progressive tax system, meaning that it uses a
+ *     marginal tax rate, which is the tax rate paid on an additional dollar of income. The marginal tax rate increases
+ *     as a taxpayer’s income increases. There are different tax rates for various levels of income. In other words,
+ *     taxpayers will pay the lowest tax rate on the first “bracket” or level of taxable income, a higher rate on the
+ *     next level, and so on.
  * </p>
  */
 public class StateTaxService {
