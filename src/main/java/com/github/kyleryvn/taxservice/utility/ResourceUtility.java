@@ -6,7 +6,9 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 import java.util.function.Function;
 import java.util.function.Predicate;
 import java.util.stream.Collectors;
@@ -21,13 +23,6 @@ public class ResourceUtility {
         return getResourceAsList(filename, lineSkip, e -> e);
     }
 
-    /**
-     * @param filename Name of file to be used
-     * @param lineSkip Amount of lines to skip in file
-     * @param conversion Convert file to specific object
-     * @param <T> Generic type
-     * @return ArrayList
-     */
     public static <T> List<T> getResourceAsList(String filename, int lineSkip, Function<String, T> conversion) {
         InputStream inputStream = getFileFromResourceAsStream(filename);
 
@@ -47,6 +42,27 @@ public class ResourceUtility {
         }
 
         return new ArrayList<>();
+    }
+
+    public static <T> Set<T> getResourceAsSet(String filename, int lineSkip, Function<String, T> conversion) {
+        InputStream inputStream = getFileFromResourceAsStream(filename);
+
+        // Change predicate to filter for specific criteria
+        Predicate<? super String> predicate = p -> true;
+
+        try (InputStreamReader inputStreamReader = new InputStreamReader(inputStream, StandardCharsets.UTF_8);
+             BufferedReader bufferedReader = new BufferedReader(inputStreamReader)) {
+
+            return bufferedReader.lines()
+                    .skip(lineSkip)
+                    .map(conversion)
+                    .collect(Collectors.toSet());
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        return new HashSet<>();
     }
 
     // Get a file from the resources folder
